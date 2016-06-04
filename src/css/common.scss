@@ -1,0 +1,109 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+ul, ol {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body, button, input,  select,  textarea  {
+	color: #5e605e;
+	font: 14px/1  Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+}
+button, input, select, textarea {
+	font-size: 100%;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	color:#545454;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff9000;
+	text-decoration: none;
+}
+fieldset, img {
+	border: none;
+}
+address, cite, dfn, em, var {
+	font-style: normal;
+}
+code, kbd, pre, samp, tt {
+	font-family: "Courier New", Courier, monospace;
+}
+small {
+	font-size: 12px;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-table;
+}/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+html {
+	overflow-y: scroll;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */ box-sizing: content-box;
+	/* 2 */;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+
+
+.container-box{
+	width: 1200px;
+	margin:0 auto;
+}
+/**
+ * header 头部
+ */
+.header{
+	height: 76px;
+}
+/**
+ * nav 导航
+ */
+.nav{
+	li{
+		float: left;
+		a{
+			display: block;
+			height: 18px;
+			line-height: 18px;
+			background: url("../images/nav_vertical_line.png") no-repeat right center;
+		}
+	}	
+}
+
+
