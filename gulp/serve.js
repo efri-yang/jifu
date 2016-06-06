@@ -16,7 +16,6 @@ gulp.task("serve",["watch"],function(){
 
 gulp.task("serve-dist",["watch-dist"],function(){
 	browserSync.init({
-        
         server:{
             baseDir:conf.paths.dist,
             directory:true

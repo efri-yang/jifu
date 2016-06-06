@@ -1,0 +1,17 @@
+$normalColor:#333;
+$hoverColor:#d3ad46;
+$activeColor:#d3ad46;
+$bodyColor:#666666;
+
+%wordbreak{
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+
+
+%text-overflow{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}

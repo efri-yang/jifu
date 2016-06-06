@@ -1,15 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/lazyload/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </head>
+
 <body>
-	<div>头部sadfasdf </div>
-	<div>尾部</div>
+    <div class="header container-box">	
+	<h1 class="logo"></h1>	
+	<ul class="nav">
+		<li class="current"><a href="#">首页</a></li>
+		<li><a href="#">投资产品</a></li>
+		<li><a href="#">行情资讯</a></li>
+		<li><a href="#">关于积富</a></li>
+		<li><a href="#">专业服务</a></li>
+		<li><a href="#">投资学习</a></li>
+		<li><a href="#">下载中心</a></li>
+		<li><a href="#">网上开户</a></li>
+		<li><a href="#">联系我们</a></li>
+	</ul>
+</div>
+    <!-- banner start -->
+    <div class="banner-box">
+        <ul id="J_banner-list" class="banner-list">
+            <li data-small="images/demo/banner_1_small.jpg" style="background-image: url('images/demo/banner_1.jpg')">
+                <a href="#"></a>
+            </li>
+            <li data-small="images/demo/banner_2_small.jpg" style="background-image: url('images/demo/banner_2.jpg')">
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- banner end -->
+    <!-- 股市列表 start -->
+    <div class="home-enterprise-index container-box" id="J_home-enterprise-index">
+        <div class="list-scroller">
+            <ul class="list clearfix">
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num down">624.21</span>
+                        <p class="wave down"><b></b>-3.54(-0.09%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num down">624.21</span>
+                        <p class="wave down"><b></b>-3.54(-0.09%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num down">624.21</span>
+                        <p class="wave down"><b></b>-3.54(-0.09%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <!--  -->
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">银精矿</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="name">苏宁云商</p>
+                        <span class="num up">2822.11</span>
+                        <p class="wave up"><b></b>+7.36(+0.26%)</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="prev dir-btn" href="javascript:;"></a>
+        <a class="next dir-btn" href="javascript:;"></a>
+    </div>
+    <!-- 股市列表 end-->
+    <!-- 关于积富 start -->
+    <div class="home-aboutjf container-box">
+        <div class="title-type1">
+            <p class="name-chn">关于积富</p>
+            <p class="name-en">
+                <b></b>
+                <span>About JiFu</span>
+            </p>
+        </div>
+        <div class="about-box">
+            <div class="intro">
+                <span class="name">选择积富</span>
+                <div class="detail">我们是积富金融，我们专注于现货电子交易投资服务，我们拥有三大国资交易平台：广东省贵金属交易中心、陕西有色金属交易中心、大连再生资源交易所的会员资格。在国内现货投资服务平台中，富成有着巨大的竞争优势。依托强大的IT技术研发团队和专业的投资研究能力，富成金融致力于打造易用、可靠、稳定、准确的交易服务平台，为广大投资者提供绝佳的交易体验......</div>
+                <a href="#" class="gosee-btn"><b>查看详情</b></a>
+            </div>
+            <div class="pic com-lazyload-gif">
+                <img class="lazy" data-original="images/demo/home_1.jpg" onload="LoadZoomImage(this,460,300)" />
+            </div>
+        </div>
+        <div class="news-box clearfix">
+            <div class="news-list-wrapper">
+                <ul class="news-list" id="J_news-list">
+                    <li class="current">
+                        <div class="hd"><a href="#">共识共为—大交所2016年经营工作会交所2016年经营工作会议营工作会议营工作会议营工作会议营工作会议</a><span class="time">2016.05.09</sapn></div>
+						<div class="bd">2016年3月5日，大连再生资源交易所（以下简称大交所）在
+	大连国际金融会议中心召开了2016年经营工作会议....</div>
+					</li>
+					<li>
+						<div class="hd"><a href="#">共识共为—大交所2016年经营工作会交所2016年经营工作会议营工作会议营工作会议营工作会议营工作会议</a><span class="time">2016.05.09</sapn></div>
+						<div class="bd">2016年3月5日，大连再生资源交易所（以下简称大交所）在
+	大连国际金融会议中心召开了2016年经营工作会议....</div>
+					</li>
+					<li>
+						<div class="hd"><a href="#">共识共为—大交所2016年经营工作会交所2016年经营工作会议营工作会议营工作会议营工作会议营工作会议</a><span class="time">2016.05.09</sapn></div>
+						<div class="bd">2016年3月5日，大连</div>
+					</li>
+					<li>
+						<div class="hd"><a href="#">共识共为—大交所2016年经营工作会交所2016年经营工作会议营工作会议营工作会议营工作会议营工作会议</a><span class="time">2016.05.09</sapn></div>
+						<div class="bd">2016年3月5日，大连再生资源交易所（以下简称大交所）在
+	大连国际金融会议中心召开了2016年经营工作会议....</div>
+					</li>
+				</ul>
+				<a href="#" class="more-btn">更多</a>
+			</div>
+			<div class="middle-pic com-lazyload-gif">
+				<img class="lazy" onload="LoadZoomImage(this,304,300)" data-original="images/demo/home_2.jpg" />
+			</div>
+			<div class="report-list-box">
+				<span class="hd">
+					重要公告
+				</span>
+                            <ul class="list">
+                                <li><a href="#">【大交所】关于调整交易品种价差及风险提示的整交易品种价差及风险提示的整交易品种价差及风险提示的公告</a></li>
+                                <li><a href="#">【大交所】关于调整交易品种价公告</a></li>
+                                <li><a href="#">【大交所】关于调整交易品种价差及风告</a></li>
+                                <li><a href="#">【大交所】关于调整交易品种价差及风险提示的公告</a></li>
+                                <li><a href="#">【大交所】关于调整交易品种价差及风</a></li>
+                            </ul>
+                            <a href="#" class="more-btn">更多</a>
+                        </div>
+            </div>
+        </div>
+        <!-- 关于积富 end-->
+        <!-- 专业服务 start-->
+        <div class="home-zyfw-box container-box">
+            <div class="title-type1">
+                <p class="name-chn">专业服务</p>
+                <p class="name-en">
+                    <b></b>
+                    <span>Professional Services</span>
+                </p>
+            </div>
+            <div class="zyfw-list">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <div class="pic com-lazyload-gif">
+                                <img class="lazy" onload="LoadZoomImage(this,224,138)" data-original="images/zyfw_1.png" />
+                            </div>
+                            <div class="txt">
+                                <p class="tit">正规平台</p>
+                                <div class="detail">
+                                    <p>正规交易平台</p>
+                                    <p>可靠安全</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic com-lazyload-gif">
+                                <img class="lazy" onload="LoadZoomImage(this,224,138)" data-original="images/zyfw_2.png" />
+                            </div>
+                            <div class="txt">
+                                <p class="tit">高收益空间</p>
+                                <div class="detail">
+                                    <p>最高50倍杠杆</p>
+                                    <p>让“收益”飞</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic com-lazyload-gif">
+                                <img class="lazy" onload="LoadZoomImage(this,224,138)" data-original="images/zyfw_3.png" />
+                            </div>
+                            <div class="txt">
+                                <p class="tit">品种齐全</p>
+                                <div class="detail">
+                                    <p>涵盖主流品种</p>
+                                    <p>选择不再困难</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic com-lazyload-gif">
+                                <img class="lazy" onload="LoadZoomImage(this,224,138)" data-original="images/zyfw_4.png" />
+                            </div>
+                            <div class="txt">
+                                <p class="tit">资金安全</p>
+                                <div class="detail">
+                                    <p>银行三方存管</p>
+                                    <p>资金有保障</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic com-lazyload-gif">
+                                <img class="lazy" onload="LoadZoomImage(this,224,138)" data-original="images/zyfw_5.png" />
+                            </div>
+                            <div class="txt">
+                                <p class="tit">周到服务</p>
+                                <div class="detail">
+                                    <p>六重服务体系</p>
+                                    <p>贴心专业</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 专业服务 end-->
+        <!-- 行情中心 start-->
+        <div class="home-hxzx-box container-box">
+            <div class="title-type1">
+                <p class="name-chn">行情中心</p>
+                <p class="name-en">
+                    <b></b>
+                    <span>Market Center</span>
+                </p>
+            </div>
+            <div class="hxzx-bd">
+                <ul class="hxzx-tabs-p-hd clearfix">
+                    <li class="active">
+                        <a href="#tab-p-1" data-toggle="tab">实时行情</a>
+                    </li>
+                    <li>
+                        <a href="#tab-p-2" data-toggle="tab">市场资讯</a>
+                    </li>
+                    <li>
+                        <a href="#tab-p-3" data-toggle="tab">财经日历</a>
+                    </li>
+                    <li>
+                        <a href="#tab-p-4" data-toggle="tab">积富内参</a>
+                    </li>
+                </ul>
+                <div class="com-tabs-content hxzx-tabs-p-bd clearfix">
+                		<!-- 实时行情 start -->
+                        <div class="tab-pane fade in active" id="tab-p-1">
+                        	<div class="sshx-countdown-box">
+                        		<div class="item-hd">重要经济数据倒计时</div>
+                        		<div class="countdown-box">
+                        			<b class="arrow"></b>
+                        			<div class="detail-txt">
+                        				<p class="hd">法国]第一季度GDP年率初值第一季度GDP年率初值第一季度GDP年率初值</p>
+                        				<div class="countdown-time-blend" id="J_countdown-time"></div>
+                        				<div class="countdown-time-unit">
+                        					<span>天</span>
+                        					<span>时</span>
+                        					<span>分</span>
+                        					<span>秒</span>
+                        				</div>
+                        			</div>
+                        		</div>
+                        		<ul class="list">
+                        			<li class="time">
+                        				数据公布时间：<br/>05-15 15:40
+                        			</li>
+                        			<li>
+                        				前值：1.2%
+                        			</li>
+                        			<li>
+                        				预测值：---
+                        			</li>
+                        			<li>
+                        				实际：待公布
+                        			</li>
+                        		</ul>
+                        	</div>
+                        	<ul class="sshx-tabs-c-hd">
+                        		<li class="active">
+                        			<b class="arrow"></b>
+			                        <a href="#tab-c-1" data-toggle="tab">银精矿</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-2" data-toggle="tab">现货白银</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-3" data-toggle="tab">现货沥青</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-4" data-toggle="tab">现货黄金</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-5" data-toggle="tab">五氧化二钒</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-6" data-toggle="tab">再生银</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-7" data-toggle="tab">粤贵铝</a>
+			                    </li>
+			                    <li>
+			                        <b class="arrow"></b>
+			                        <a href="#tab-c-8" data-toggle="tab">长安PP</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-9" data-toggle="tab">大连油</a>
+			                    </li>
+			                    <li>
+			                    	<b class="arrow"></b>
+			                        <a href="#tab-c-10" data-toggle="tab">粤贵银</a>
+			                    </li>
+                        	</ul>
+                        	<div class="sshx-tabs-c-bd com-tabs-content">
+                        		 <div class="tab-pane fade in active" id="tab-c-1">
+                        		 	<div class="chart-map-wrapper">
+                        		 		<div class="chart-type">
+                        		 			<a href="#" class="current">分时图</a>
+                        		 			<a href="#">K线图</a>
+                        		 		</div>
+                        		 		<div class="chart-map">
+                        		 			<img src="images/demo/home_3.jpg">
+                        		 		</div>
+                        		 	</div>
+                        		 	<div class="chart-txt-wrapper">
+                        		 		<div class="item-up">
+                        		 			<div class="name">
+                        		 				<p><span>银精矿精矿</span><b>TYJK</b></p>
+                        		 			</div>
+                        		 			<div class="num">3280</div>
+                        		 			<!-- up 箭头向上 down 箭头向下 -->
+                        		 			<div class="wave up">
+                        		 				<b></b>+5.90(+0.34%)
+                        		 			</div>
+                        		 			<div class="time">2016-05-13 16:00:42</div>
+                        		 		</div>
+                        		 		<ul class="item-down clearfix">
+                        		 			<li>
+                        		 				<p>3281</p>
+                        		 				<span>开盘价</span>
+                        		 			</li>
+                        		 			<li>
+                        		 				<p>3283</p>
+                        		 				<span>昨收价</span>
+                        		 			</li>
+                        		 			<li>
+                        		 				<p>3281</p>
+                        		 				<span class="up">最高价</span>
+                        		 			</li>
+                        		 			<li>
+                        		 				<p>3281</p>
+                        		 				<span class="down">最低价</span>
+                        		 			</li>
+                        		 		</ul>
+                        		 	</div>
+                        		 </div>
+                        		 <div class="tab-pane fade" id="tab-c-2">222</div>
+                        		 <div class="tab-pane fade" id="tab-c-3">333</div>
+                        		 <div class="tab-pane fade" id="tab-c-4">444</div>
+                        		 <div class="tab-pane fade" id="tab-c-5">555</div>
+                        		 <div class="tab-pane fade" id="tab-c-6">666</div>
+                        		 <div class="tab-pane fade" id="tab-c-7">777</div>
+                        		 <div class="tab-pane fade" id="tab-c-8">888</div>
+                        		 <div class="tab-pane fade" id="tab-c-9">999</div>
+                        		 <div class="tab-pane fade" id="tab-c-10">1010</div>
+                        	</div>
+                        </div>
+                        <!-- 实时行情 end -->
+                        <div class="tab-pane fade" id="tab-p-2">222</div>
+                        <div class="tab-pane fade" id="tab-p-3">333</div>
+                        <div class="tab-pane fade" id="tab-p-4">444</div>
+                </div>
+            </div>
+            </div>
+            <!-- 行情中心 end-->
+            <!-- 研究团队 start-->
+            <div class="yjtd-box container-box">
+                <div class="title-type1">
+                    <p class="name-chn">研究团队</p>
+                    <p class="name-en">
+                        <b></b>
+                        <span>Research Team</span>
+                    </p>
+                </div>
+                <div class="yjtd-bd clearfix">
+                    <div class="yj-team">
+                        <div class="hd"><a href="#" class="more-btn">更多</a>积富•上海宏观经济研究中心</div>
+                        <ul class="list clearfix">
+                            <li>
+                                <a href="#">
+                                    <div class="pic com-lazyload-gif">
+                                        <img class="lazy" onload="LoadZoomImage(this,260,178)" data-original="images/team_2.jpg" />
+                                    </div>
+                                    <div class="infor">
+                                        <p>谢世华</p>
+                                        <p>首席宏观观察员</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pic com-lazyload-gif">
+                                        <img class="lazy" onload="LoadZoomImage(this,260,178)" data-original="images/team_2.jpg" />
+                                    </div>
+                                    <div class="infor">
+                                        <p>谢世华</p>
+                                        <p>首席宏观观察员</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pic com-lazyload-gif">
+                                        <img class="lazy" onload="LoadZoomImage(this,260,178)" data-original="images/team_2.jpg" />
+                                    </div>
+                                    <div class="infor">
+                                        <p>谢世华</p>
+                                        <p>首席宏观观察员</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pic com-lazyload-gif">
+                                        <img class="lazy" onload="LoadZoomImage(this,260,178)" data-original="images/team_2.jpg" />
+                                    </div>
+                                    <div class="infor">
+                                        <p>谢世华</p>
+                                        <p>首席宏观观察员</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yj-news">
+                        <div class="jy-school-intro">
+                            <div class="hd">上海宏观经济研究中心简介</div>
+                            <div class="bd">
+                                <p>上海长江联合金属交易中心有限公司（以下简称"长江联合"）是经上海市商务委批准的，并取得市金融办合规意见，由长发集团长江投资实业股份有限公司，联合南京长江发展股份有限公司等共同发起设立的股份制公司。</p>
+                                <p>"长江联合"是上海地区首家混合经济模式交易中心，是在"长江经济带"国家战略格局下，立足上海市现货贸易流通与互联网金融建设发展的尝试下......</p>
+                            </div>
+                            <a href="#" class="gosee-btn"><b>查看详情</b></a>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a href="#">【报道】全国股转公司副总经理高振营表示，除了稳步推进</a>
+                                <span class="time">2016.05.09</span>
+                            </li>
+                            <li>
+                                <a href="#">【报道】全国股转公司副总经理高振营表示，除了稳步推进</a>
+                                <span class="time">2016.05.09</span>
+                            </li>
+                            <li>
+                                <a href="#">【报道】全国股转公司副总经理高振营表示，除了稳步推进</a>
+                                <span class="time">2016.05.09</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 研究团队 end-->
+            <!-- 投资学院 start-->
+            <div class="tzxy-box container-box">
+                <div class="title-type1">
+                    <p class="name-chn">投资学院</p>
+                    <p class="name-en">
+                        <b></b>
+                        <span>Investment Institute</span>
+                    </p>
+                </div>
+                <ul class="list clearfix">
+                    <li class="item-jszd">
+                        <a href="#">
+                            <span class="pic"></span> - <b>基础知识</b> -
+                        </a>
+                    </li>
+                    <li class="item-jszs">
+                        <a href="#">
+                            <span class="pic"></span> - <b>技术指导</b> -
+                        </a>
+                    </li>
+                    <li class="item-cjwt">
+                        <a href="#">
+                            <span class="pic"></span> - <b>常见问题</b> -
+                        </a>
+                    </li>
+                    <li class="item-rjsy">
+                        <a href="#">
+                            <span class="pic"></span> - <b>软件使用</b> -
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 投资学院 end-->
+            <div class="footer">
+    <div class="container-box clearfix">
+        <div class="foot-up-box clearfix">
+            <dl class="foot-list">
+                <dt>旗下产品</dt>
+                <dd>
+                    <a href="#">融金汇银</a>
+                    <a href="#">金祥银瑞</a>
+                    <a href="#">积富科技</a>
+                    <a href="#">积富信息</a>
+                    <a href="#">积富制品</a>
+                    <a href="#">积富盛鼎</a>
+                    <a href="#">金兜财富</a>
+                </dd>
+            </dl>
+            <dl class="foot-list">
+                <dt>旗下产品</dt>
+                <dd>
+                    <a href="#">工商银行</a>
+                    <a href="#">光大银行</a>
+                    <a href="#">建设银行</a>
+                    <a href="#">农业银行</a>
+                    <a href="#">招商银行</a>
+                    <a href="#">浦发银行</a>
+                </dd>
+            </dl>
+            <dl class="foot-list cooperate-company">
+                <dt>合作交易所</dt>
+                <dd>
+                    <a href="#"><img src="../images/cooperate_link_1.jpg"></a>
+                    <a href="#"><img src="../images/cooperate_link_2.jpg"></a>
+                    <a href="#"><img src="../images/cooperate_link_3.jpg"></a>
+                </dd>
+            </dl>
+            <div class="foot-tip">
+                <p>投资有风险，入市需谨慎</p>
+                <div class="detail">
+                    本产品属于高风险、高收益投资品种；投资者应具有较高的风险识别能力、资金实力与风险承受能力。投资者应合理配置资产、不应用全部资金做投资，不应借钱来做投资。
+                </div>
+            </div>
+        </div>
+        <div class="foot-down-box">
+        	<div class="foot-nav">
+        		<a href="#">• 关于我们</a>
+        		<a href="#">• 联系我们</a>
+        		<a href="#">• 加入我们</a>
+        		<a href="#">• 法律声明</a>
+        		<a href="#">• 风险提示</a>
+        		<a href="#">• 隐私保密条款</a>      
+        		<a href="#">• 设置勿扰</a>                        
+        	</div>
+        	<p class="copyright">备案/许可证编号：沪ICP备XXXXXXXX www.021gdp.com    Copyright © 2015版权所有 复制必究 , Power by jifu</p>
+        </div>
+    </div>
+</div>
+
+
+            <script type="text/javascript" src="js/countdown/jquery.countdown.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript">
+$(function(){
+    $('#J_countdown-time').countdown('2016/6/6/ 01:00:00', function(event) {
+		$(this).html(event.strftime('<span class="day">%d</span>:<span class="hours">%H</span>:<span class="min">%M</span>:<span class="second">%S</span>'));
+	});                     						
+})
+
+                        					</script>
 </body>
+
 </html>

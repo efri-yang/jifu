@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "variable";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -14,8 +15,8 @@ table {
 	border-spacing: 0;
 }
 body, button, input,  select,  textarea  {
-	color: #5e605e;
-	font: 14px/1  Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+	color:$bodyColor;
+	font: 14px/1.5  Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
 }
 button, input, select, textarea {
 	font-size: 100%;
@@ -28,11 +29,11 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: none;
 }
 a {
-	color:#545454;
+	color:$normalColor;
 	text-decoration: none;
 }
 a:hover {
-	color: #ff9000;
+	color:$hoverColor;
 	text-decoration: none;
 }
 fieldset, img {
@@ -85,25 +86,179 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 	width: 1200px;
 	margin:0 auto;
 }
+.com-lazyload-gif{
+	background: url("../images/loading.gif") no-repeat center center;
+}
 /**
  * header 头部
  */
 .header{
 	height: 76px;
+	.logo{
+		width:230px;
+		height: 100%;
+		background: #f60;
+		float: left; 
+
+	}
 }
 /**
  * nav 导航
  */
 .nav{
+	float: right;
+	padding-top: 32px;
+	max-width: 950px;
 	li{
 		float: left;
+		background: url("../images/nav_vertical_line.png") no-repeat right center;
 		a{
+			padding:0 20px;
 			display: block;
-			height: 18px;
-			line-height: 18px;
-			background: url("../images/nav_vertical_line.png") no-repeat right center;
+			position: relative;
+			font-size: 16px;
+			&:after{
+				content: "";
+				-webkit-transition: all .3s ease-out;
+			-ms-transition: all .3s ease-out ;
+			-moz-transition: all .3s ease-out ;
+		    transition: all .3s ease-out ;
+			    width: 0;
+			    height: 2px;
+			    background: #d3ad46;
+			    position: absolute;
+			    bottom: -20px;
+			    left: 0;
+
+			}
+			&:hover{
+				&:after{
+					width: 100%;
+				}
+				
+			}
+			
+		}
+		&:last-child{
+			background:none;
+		}
+		&.current{
+			a{
+				color: $activeColor;
+				&:after{
+					width: 100%;
+				}
+			}
 		}
 	}	
 }
+
+/**
+ * footer
+ */
+.footer{
+	background: #343129;
+	padding-top: 60px;
+	.foot-up-box{
+		padding-bottom: 30px;
+	}
+	.foot-list{
+		float: left;
+		width: 245px;
+		padding: 0 0 0 45px;
+		min-height: 214px;
+		overflow: hidden;
+		border-right: 1px solid #403d36;
+		dt{
+			font-size: 18px;
+			color: #d3ad46;
+		}
+		dd{
+			margin-top: 15px;
+			a{
+				color: #808080;
+				float: left;
+				width: 50%;
+				padding-right: 15px;
+				-moz-box-sizing:border-box;
+				box-sizing:border-box;
+				line-height: 32px;
+				&:hover{
+					color: #babab9;
+				}
+			}
+		}
+	}
+	.cooperate-company{
+		border-right: none;
+		dd{
+			a{
+				display: block;
+				width: 100%;
+				padding: 0;
+				margin-bottom:3px;
+				line-height: normal;
+			}
+		}
+	}
+	.foot-tip{
+		background: #403d36;
+		width: 317px;
+		padding: 20px 45px 30px 30px;
+		float: right;
+		overflow: hidden;
+		min-height: 208px;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		line-height: 24px;
+
+		p{
+			line-height: 24px;
+			font-size: 18px;
+		}
+		.detail{
+			margin-top: 20px;
+		}
+	}
+	.foot-down-box{
+		border-top:1px solid #5d5a54;
+		padding: 20px 0;
+		.copyright{
+			text-align: center;
+			margin-top: 3px;
+			font-size: 12px;
+		}
+	}
+	.foot-nav{
+		text-align: center;
+		a{
+			color: #aaaaaa;
+			margin: 0 5px;
+			&:hover{
+				color:#e7e7e7;
+			}
+		}
+	}
+}
+
+/**
+ *tab 
+ */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+       -o-transition: opacity .15s linear;
+          transition: opacity .15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.com-tabs-content > .tab-pane {
+  display: none;
+}
+.com-tabs-content > .active {
+  display: block;
+}
+
 
 

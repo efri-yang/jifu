@@ -1,0 +1,227 @@
+@charset "utf-8";
+@import "variable";
+.sub-banner-wrapper{
+	height: 250px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	.sub-banner-innner{
+		position: absolute;
+		left:50%;
+		top:0;
+		height: 100%;
+		a{
+			position: relative;
+			left:-50%;
+			display: block;
+			height: 100%;
+		}
+		img{
+			max-height:100%;
+		}
+	}
+}
+
+.breadnav-box{
+	border-bottom: 1px dotted #e4e4e4;
+	height: 23px;
+	line-height: 23px;
+	padding:20px 0;
+	.tit{
+		float: left;
+		border-left:4px solid #d3ad46;
+		padding-left: 15px;
+		.chn{
+			font-size: 24px;
+			color: #d3ad46;
+		}
+		.en{
+			font-size: 12px;
+			color: #aaaaaa;
+			font-family: arial;
+		}
+	}
+	.list{
+		float: right;
+		color:#999999;
+		background: url("../images/breadnav_home.jpg") no-repeat left center;
+		padding-left: 25px;
+		a{
+			color:#999999;
+			&:hover{
+				color: $hoverColor;
+			}
+		}
+	}
+}
+.subpage-nav{
+	li{
+		float: left;
+		border-right: 1px dotted #e4e4e4;
+		border-left: 1px dotted #e4e4e4;
+		position: relative;
+		margin-left: -1px;
+		padding-bottom: 6px;
+		&.active{
+			a{
+				background: #d3ad46;
+				color: #fff;
+			}
+			b{
+				display: block;
+			}
+		}
+		a{
+			display: block;
+			min-width:130px;
+			text-align: center;
+			height: 41px;
+			line-height: 41px;
+			font-size: 16px;
+		}
+		b{
+			width: 11px;
+			height: 6px;
+			position: absolute;
+			bottom: 0;
+			display: none;
+			left:50%;
+			margin-left: -5.5px;
+			background: url("../images/subpage_nav_arrow.png") no-repeat left top;
+		}
+	}
+}
+.subpage-con-container{
+	margin: 50px auto 0;
+	padding: 0 30px 90px;
+	overflow: hidden;
+	width: 1140px;
+}
+.com-article-content{
+	overflow: hidden;
+	width: 100%;
+	font-size: 14px;
+	color: #666;
+	img{
+		max-width: 100%;
+	}
+}
+
+.pagination-type1{
+	text-align:right;
+	a,span{
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		line-height: 44px;
+		font-size: 20px;
+		text-align: center;
+		color: #ccc;
+		vertical-align: middle;
+	}
+	span.current{
+		background:#d3ad46;
+		color:#fff; 
+	}
+	a:hover{
+			background: #d3ad46;
+			color: #fff;
+		}
+}
+
+/**
+ * 相关证照
+ */
+.aboutjf-permit{
+	position: relative;
+	margin-left:-20px;
+	li{
+		float: left;
+		width: 269px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		display: inline;
+		a{
+			display: block;
+			padding-bottom: 20px;
+			&:hover{
+				background: #d3ad46;
+				.txt{
+					color: #fff;
+				}
+				.more{
+					color: #fff;
+				}
+			}
+		}
+		.pic{
+			width: 100%;
+			height: 186px;
+			overflow: hidden;
+			background: #fff;
+		}
+		.txt{
+			padding: 15px 20px 0;
+			font-size:20px;
+			color: #666;
+			line-height: 28px;
+			height: 56px;
+			overflow: hidden;
+		}
+		.more{
+			margin-top: 20px;
+			padding: 0 20px;
+			display:block;
+			color: #d3ad46;
+		}
+	}
+}
+
+/**
+ * 公司活动 
+ */
+.companyactivity-list{
+	padding-bottom: 40px;
+	li{
+		margin-bottom: 20px;
+		
+		a{
+			display: block;
+			height: 260px;
+			padding-right: 30px;
+			&:hover{
+				background: #d3ad46;
+				.tit,.intro,.time{
+					color:#fff;
+				}
+			}
+		}
+		.pic{
+			width: 400px;
+			height: 260px;
+			background-color: #fff;
+			overflow: hidden;
+			float: left;
+			margin-right: 30px;
+		}
+		.tit{
+			font-size: 16px;
+			color: #333;
+			padding:28px 0;
+			@extend %text-overflow;
+			border-bottom: 1px dotted #cccccc;
+		}
+		.intro{
+			color: #666;
+			line-height: 26px;
+			height: 52px;
+			overflow: hidden;
+			padding: 20px 0 30px;
+			
+		}
+		.time{
+			color: #aaa;
+			
+		}
+	}
+}
