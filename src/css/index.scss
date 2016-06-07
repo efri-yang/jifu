@@ -817,6 +817,7 @@
 }
 .chart-map-wrapper{
 	width: 657px;
+	background:#fbf5ef; 
 	overflow: hidden;
 	float: left;
 	.chart-type{
@@ -964,3 +965,10 @@
 }
 
 
+/**
+ * 图表
+ */
+.highcharts-container{
+	width: 100%;
+	height:100%;
+}
