@@ -614,3 +614,187 @@
 		}
 	}
 }
+
+/**
+ * 财经日历
+ */
+.cjcalendar-box{
+	background: #879fcf;
+	padding: 10px;
+	.lt-area{
+		padding: 3px;
+		width: 530px;
+		float: left;
+		background: #4763a8;
+		.calendar-icon{
+			color: #fff;
+			font-size: 16px;
+			width: 253px;
+			height: 160px;
+			text-align: center;
+			background: #89a3d3;
+			padding-top:16px;
+			float: left;
+			b{
+				width: 93px;
+				height: 120px;
+				margin:0px auto 5px;
+				display: block;
+				overflow: hidden;
+				background: url("../images/calendar_icon.png") no-repeat left top;
+			}
+		}
+		.calendar-time{
+			.tit{
+				font-size: 16px;
+				color:#fff;
+				text-align: center;
+				padding-top: 25px;
+			}
+		}
+	}
+	.rt-area{
+		float: right;
+		width:568px; 
+		li{
+			width: 274px;
+			height: 86px;
+			line-height: 86px;
+			float: left;
+			margin: 0px 0 10px 10px;
+			text-align: center;
+			background: #94aad5;
+			font-size: 24px;
+			color: #fff;
+			@extend %text-overflow;
+			&.time{
+				line-height: 36px;
+				padding-top:8px;
+				height: 78px;
+			}
+			&:nth-child(3){
+				margin-bottom: 0;
+			}
+			&:nth-child(4){
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.countdown-time-blend2{
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	span{
+		display:inline-block;
+		vertical-align: middle;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		background: #ffdfc8;
+		text-align: center;
+		font-size: 24px;
+		border-radius: 100%;
+		overflow: hidden;
+		margin: 0 5px;
+		color: #333;	
+	}
+}
+.countdown-time-unit2{
+	text-align: center;
+	margin-top: 3px;
+	span{
+		display:inline-block;
+		width: 62px;
+		height: 32px;
+		color: #fff;
+		font-size: 18px;
+	}
+}
+.cjcalendar-data-list{
+	padding-left: 10px;
+	padding-top: 30px;
+	li{
+		position: relative;
+		padding: 0px 30px 0 120px;
+		min-height: 100px;
+		line-height: 23px;
+		margin-bottom: 40px; 
+		.time{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left:0;
+			top:0;
+			text-align: center;
+			color: #fff;
+			font-size: 18px;
+			font-family: arial;
+			background: #d3ad46;
+			b{
+				font-size: 14px;
+				font-weight: normal;
+				margin-top: 24px;
+				display: block;
+			}
+		}
+		.country{
+			height: 35px;
+			line-height: 35px;
+			font-size: 16px;
+			border-bottom: 1px solid #e4e4e4;
+			b{
+				width: 22px;
+				height: 13px;
+				overflow:hidden;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left:5px;
+				border:1px solid #000000;
+				&.china{
+					background: url("../images/country/china.png") no-repeat left top;
+				}
+			}
+		}
+		.para{
+			line-height: 41px;
+			font-size: 16px;
+			color: #666666;
+			padding-top: 10px;
+			.name{
+				width: 270px;
+				float: left;
+				color: #333;
+				padding-right: 10px;
+			}
+			.prev{
+				width: 160px;
+				float: left;
+				padding-right: 10px;
+			}
+			.orecast{
+				width: 160px;
+				float: left;
+				padding-right: 10px;
+			}
+			.actual{
+				width: 20%;
+				float: left;
+			}
+			.btn-type{
+				width: 122px;
+				height: 41px;
+				float: right;
+				margin-right: 30px;
+				text-align: center;
+				color: #fff;
+				&.red{
+					background: #f54545;
+				}
+				&.green{
+					background: #0f990f;
+				}
+			}
+		}
+	}
+}
