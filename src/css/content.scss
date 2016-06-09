@@ -135,10 +135,10 @@
 
 
 /**
- * 相关证照
+ * 相关证照,软件使用
  */
 
-.aboutjf-permit {
+.aboutjf-permit,.software-use-list{
     position: relative;
     margin-left: -20px;
     li {
@@ -181,6 +181,9 @@
             color: #d3ad46;
         }
     }
+}
+.software-use-list{
+    padding-bottom: 25px;
 }
 
 
@@ -480,321 +483,713 @@
     margin-top: 15px
 }
 
+
 /**
  *行情资讯——市场咨询 
  */
-.marketnews-list{
-	margin-bottom: 45px;
-	li{
-		position: relative;
-		padding:15px 52px 15px 167px;
-		border-bottom: 1px dotted #e4e4e4;
-		line-height: 28px;
-		&:hover{
-			.time{
-				color:$activeColor;
-				background: url("../images/time_clock_hover.jpg") no-repeat left center;
-			}
-		}
-		a{
-			max-height: 56px;
-			overflow: hidden;
-			display: block;
-		}
-		.time{
-			position: absolute;
-			left:20px;
-			top:15px;
-			padding-left: 30px;
-			color: #aaaaaa;
-			font-size: 18px;
-			background: url("../images/time_clock.jpg") no-repeat left center;
-		}
-	}
+
+.marketnews-list {
+    margin-bottom: 45px;
+    li {
+        position: relative;
+        padding: 15px 52px 15px 167px;
+        border-bottom: 1px dotted #e4e4e4;
+        line-height: 28px;
+        &:hover {
+            .time {
+                color: $activeColor;
+                background: url("../images/time_clock_hover.jpg") no-repeat left center;
+            }
+        }
+        a {
+            max-height: 56px;
+            overflow: hidden;
+            display: block;
+        }
+        .time {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            padding-left: 30px;
+            color: #aaaaaa;
+            font-size: 18px;
+            background: url("../images/time_clock.jpg") no-repeat left center;
+        }
+    }
 }
+
+
 /**
  * 分页
  */
-.pagination-type2{
-	text-align: right;
-	a{
-		width: 108px;
-		height: 36px;
-		line-height: 36px;
-		display: inline-block;
-		margin: 0 5px;
-		background: #cccccc;
-		text-align:center;
-		font-size: 16px;
-		span{
-			color: #fff;
-		}
-		&:hover{
-			background: $activeColor;
-		}
-		&.prev{
-			span{
-				padding-left: 18px;
-				background: url("../images/p_arrow_lf.png") no-repeat left center;
-			}
-		}
-		&.next{
-			span{
-				padding-right: 18px;
-				background: url("../images/p_arrow_rt.png") no-repeat right center;
-			}
-		}
-	}
+
+.pagination-type2 {
+    text-align: right;
+    a {
+        width: 108px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        margin: 0 5px;
+        background: #cccccc;
+        text-align: center;
+        font-size: 16px;
+        span {
+            color: #fff;
+        }
+        &:hover {
+            background: $activeColor;
+        }
+        &.prev {
+            span {
+                padding-left: 18px;
+                background: url("../images/p_arrow_lf.png") no-repeat left center;
+            }
+        }
+        &.next {
+            span {
+                padding-right: 18px;
+                background: url("../images/p_arrow_rt.png") no-repeat right center;
+            }
+        }
+    }
 }
+
 
 /**
  * 详细页
  */
-.detail-page-hd{
-	text-align: center;
-	h1{
-		font-size: 20px;
-		color: #d3ad46;
-		margin-bottom: 15px;
-	}
-	.time{
-		font-size: 12px;
-		color: #999999;
-		margin-bottom: 8px;
-	}
-	.share{
-		display: inline-block;
-		position: relative;
-		padding-left: 60px;
-		.txt{
-			position: absolute;
-			left:0;
-			top:0;
-			line-height: 28px;
-		}
-	}
+
+.detail-page-hd {
+    text-align: center;
+    h1 {
+        font-size: 20px;
+        color: #d3ad46;
+        margin-bottom: 15px;
+    }
+    .time {
+        font-size: 12px;
+        color: #999999;
+        margin-bottom: 8px;
+    }
+    .share {
+        display: inline-block;
+        position: relative;
+        padding-left: 60px;
+        .txt {
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 28px;
+        }
+    }
 }
-.detail-page-bd{
-	font-size: 14px;
-	color: #666;
-	line-height: 28px;
-	img{
-		max-width: 100%;
-	}
+
+.detail-page-bd {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    img {
+        max-width: 100%;
+    }
 }
-.detai-page-dir{
-	margin-top: 35px;
-	position:relative;
-	padding-right: 180px;
-	border-top:1px solid #e4e4e4;
-	padding-top: 35px;
-	.back{
-		width: 135px;
-		height: 44px;
-		line-height: 44px;
-		color: #fff;
-		text-align: center;
-		font-size: 16px;
-		background: #d3ad46;
-		position: absolute;
-		right: 0;
-		top:35px;
-	}
-	ul{
-		li{	
-			line-height: 28px;
-			@extend %text-overflow;
-			a{
-				color:$normalColor;
-				margin-left: 5px;
-				&:hover{
-					color: $activeColor;
-				}
-			}
-		}
-	}
+
+.detai-page-dir {
+    margin-top: 35px;
+    position: relative;
+    padding-right: 180px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 35px;
+    .back {
+        width: 135px;
+        height: 44px;
+        line-height: 44px;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        background: #d3ad46;
+        position: absolute;
+        right: 0;
+        top: 35px;
+    }
+    ul {
+        li {
+            line-height: 28px;
+            @extend %text-overflow;
+            a {
+                color: $normalColor;
+                margin-left: 5px;
+                &:hover {
+                    color: $activeColor;
+                }
+            }
+        }
+    }
 }
+
 
 /**
  * 财经日历
  */
-.cjcalendar-box{
-	background: #879fcf;
-	padding: 10px;
-	.lt-area{
-		padding: 3px;
-		width: 530px;
-		float: left;
-		background: #4763a8;
-		.calendar-icon{
-			color: #fff;
-			font-size: 16px;
-			width: 253px;
-			height: 160px;
-			text-align: center;
-			background: #89a3d3;
-			padding-top:16px;
-			float: left;
-			b{
-				width: 93px;
-				height: 120px;
-				margin:0px auto 5px;
-				display: block;
-				overflow: hidden;
-				background: url("../images/calendar_icon.png") no-repeat left top;
-			}
-		}
-		.calendar-time{
-			.tit{
-				font-size: 16px;
-				color:#fff;
-				text-align: center;
-				padding-top: 25px;
-			}
-		}
-	}
-	.rt-area{
-		float: right;
-		width:568px; 
-		li{
-			width: 274px;
-			height: 86px;
-			line-height: 86px;
-			float: left;
-			margin: 0px 0 10px 10px;
-			text-align: center;
-			background: #94aad5;
-			font-size: 24px;
-			color: #fff;
-			@extend %text-overflow;
-			&.time{
-				line-height: 36px;
-				padding-top:8px;
-				height: 78px;
-			}
-			&:nth-child(3){
-				margin-bottom: 0;
-			}
-			&:nth-child(4){
-				margin-bottom: 0;
-			}
-		}
-	}
+
+.cjcalendar-box {
+    background: #879fcf;
+    padding: 10px;
+    .lt-area {
+        padding: 3px;
+        width: 530px;
+        float: left;
+        background: #4763a8;
+        .calendar-icon {
+            color: #fff;
+            font-size: 16px;
+            width: 253px;
+            height: 160px;
+            text-align: center;
+            background: #89a3d3;
+            padding-top: 16px;
+            float: left;
+            b {
+                width: 93px;
+                height: 120px;
+                margin: 0px auto 5px;
+                display: block;
+                overflow: hidden;
+                background: url("../images/calendar_icon.png") no-repeat left top;
+            }
+        }
+        .calendar-time {
+            .tit {
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                padding-top: 25px;
+            }
+        }
+    }
+    .rt-area {
+        float: right;
+        width: 568px;
+        li {
+            width: 274px;
+            height: 86px;
+            line-height: 86px;
+            float: left;
+            margin: 0px 0 10px 10px;
+            text-align: center;
+            background: #94aad5;
+            font-size: 24px;
+            color: #fff;
+            @extend %text-overflow;
+            &.time {
+                line-height: 36px;
+                padding-top: 8px;
+                height: 78px;
+            }
+            &:nth-child(3) {
+                margin-bottom: 0;
+            }
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
-.countdown-time-blend2{
-	color: #fff;
-	text-align: center;
-	margin-top: 20px;
-	span{
-		display:inline-block;
-		vertical-align: middle;
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		background: #ffdfc8;
-		text-align: center;
-		font-size: 24px;
-		border-radius: 100%;
-		overflow: hidden;
-		margin: 0 5px;
-		color: #333;	
-	}
+
+.countdown-time-blend2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: #ffdfc8;
+        text-align: center;
+        font-size: 24px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 0 5px;
+        color: #333;
+    }
 }
-.countdown-time-unit2{
-	text-align: center;
-	margin-top: 3px;
-	span{
-		display:inline-block;
-		width: 62px;
-		height: 32px;
-		color: #fff;
-		font-size: 18px;
-	}
+
+.countdown-time-unit2 {
+    text-align: center;
+    margin-top: 3px;
+    span {
+        display: inline-block;
+        width: 62px;
+        height: 32px;
+        color: #fff;
+        font-size: 18px;
+    }
 }
-.cjcalendar-data-list{
-	padding-left: 10px;
-	padding-top: 30px;
+
+.cjcalendar-data-list {
+    padding-left: 10px;
+    padding-top: 30px;
+    li {
+        position: relative;
+        padding: 0px 30px 0 120px;
+        min-height: 100px;
+        line-height: 23px;
+        margin-bottom: 40px;
+        .time {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-family: arial;
+            background: #d3ad46;
+            b {
+                font-size: 14px;
+                font-weight: normal;
+                margin-top: 24px;
+                display: block;
+            }
+        }
+        .country {
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            border-bottom: 1px solid #e4e4e4;
+            b {
+                width: 22px;
+                height: 13px;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+                border: 1px solid #000000;
+                &.china {
+                    background: url("../images/country/china.png") no-repeat left top;
+                }
+            }
+        }
+        .para {
+            line-height: 41px;
+            font-size: 16px;
+            color: #666666;
+            padding-top: 10px;
+            .name {
+                width: 270px;
+                float: left;
+                color: #333;
+                padding-right: 10px;
+            }
+            .prev {
+                width: 160px;
+                float: left;
+                padding-right: 10px;
+            }
+            .orecast {
+                width: 160px;
+                float: left;
+                padding-right: 10px;
+            }
+            .actual {
+                width: 20%;
+                float: left;
+            }
+            .btn-type {
+                width: 122px;
+                height: 41px;
+                float: right;
+                margin-right: 30px;
+                text-align: center;
+                color: #fff;
+                &.red {
+                    background: #f54545;
+                }
+                &.green {
+                    background: #0f990f;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * 积富内参
+ */
+
+.jfnc-list {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 1170px;
+    li {
+        width: 545px;
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        display: inline;
+        .pic {
+            width: 279px;
+            height: 279px;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+        }
+        .tit {
+            font-size: 16px;
+            color: #333333;
+            height: 56px;
+            line-height: 56px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            @extend %text-overflow;
+            border-bottom: 1px dotted #e4e4e4;
+        }
+        .intro {
+            line-height: 26px;
+            height: 104px;
+            overflow: hidden;
+        }
+        .btn {
+            padding-top: 50px;
+            a {
+                width: 108px;
+                height: 36px;
+                line-height: 36px;
+                display: block;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                font-size: 16px;
+                color: #aaaaaa;
+                text-align: center;
+                &:hover {
+                    background: #d3ad46;
+                    color: #fff;
+                    border-color: #d3ad46;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * 实时行情
+ */
+
+.sshx-chart-tabhd {
+    background: #d69a64;
+    overflow: hidden;
+    position: relative;
+    padding: 0 42px;
+    margin-bottom: 10px;
+    .scroll-wrap {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 42px;
+        line-height: 42px;
+        .list {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 9999999px;
+            li {
+                border-right: 1px solid #dca979; //
+                float: left;
+                &.active {
+                    a {
+                        background: #ab7b50;
+                    }
+                }
+                a {
+                    width: 116.5px;
+                    height: 42px;
+                    display: block;
+                    color: #fff;
+                    text-align: center;
+                    &:hover {
+                        background: #ab7b50;
+                    }
+                }
+            }
+        }
+    }
+    .dir {
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        &.prev {
+            border-right: 1px solid #dca979;
+            left: 0;
+            background: url("../images/p_arrow_lf.png") no-repeat center center;
+        }
+        &.next {
+            border-left: 1px solid #dca979;
+            right: 0;
+            background: url("../images/p_arrow_rt.png") no-repeat center center;
+        }
+    }
+}
+
+.sshx-tabs-c-bd {
+    width: 780px;
+    height: 400px;
+    float: left;
+    margin-left: 15px;
+    overflow: hidden;
+    .charts-box {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.charts-detail-box {
+    .cell-item {
+        margin-bottom: 40px;
+    }
+}
+
+.sshx-charts-date {
+    float: right;
+    width: 184px;
+    padding: 40px 18px;
+    background: #f2decc;
+    .hd {
+        height: 57px;
+        line-height: 57px;
+        text-align: center;
+        background: #dfb79a;
+        b {
+            background: url("../images/sshx_charts_arrow.jpg") no-repeat right center;
+            padding-right: 25px;
+            font-size: 22px;
+            color: #fff;
+            font-weight: normal;
+        }
+    }
+    .bd {
+        border: 1px solid #dfb79a;
+        border-bottom: none;
+        a {
+            display: block;
+            height: 55px;
+            line-height: 55px;
+            overflow: hidden;
+            font-size: 22px;
+            text-align: center;
+            @extend %text-overflow;
+            color: #d69a64;
+            border-bottom: 1px solid #dfb79a;
+            &.current,
+            &:hover {
+                color: #c96002;
+            }
+        }
+    }
+}
+
+
+/**
+ * 网上开户
+ */
+/**
+ * 公共部分
+ */
+.openaccount-tabs-hd {
+    text-align: center;
+    border-bottom: 1px solid #dfb79a;
+    margin-bottom: 30px;
+    li {
+        display: inline-block;
+        padding-bottom: 54px;
+        position: relative;
+        margin: 0 30px;
+        &.active {
+            .pic {
+                border-color: #dfb79a
+            }
+            .arrow {
+                display: block;
+            }
+        }
+        a {
+            display: block;
+            &:hover {
+                .pic {
+                    border-color: #dfb79a
+                }
+            }
+        }
+        .pic {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            display: block;
+            border-radius: 100%;
+            border: 8px solid #e4e4e4;
+            &.pic1 {
+                background: url("../images/khs_1.jpg") no-repeat center center;
+            }
+            &.pic2 {
+                background: url("../images/khs_2.jpg") no-repeat center center;
+            }
+            &.pic3 {
+                background: url("../images/khs_3.jpg") no-repeat center center;
+            }
+        }
+        .name {
+            font-size: 20px;
+            line-height: 20px;
+            color: #666;
+            margin-top: 8px;
+            display: block;
+        }
+        .arrow {
+            width: 15px;
+            height: 8px;
+            display: none;
+            position: absolute;
+            left: 50%;
+            margin-left: -4px;
+            top: 100%;
+            background: url("../images/online_open_arrow_red.png") no-repeat left top;
+        }
+    }
+}
+
+.online-open-box {
+    padding-bottom: 30px;
+    .tabs-bd {
+        width: 100%;
+        height: 406px;
+        overflow: hidden;
+    }
+    .online-open-video {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .step-box {
+        margin-top: 50px;
+        .tit {
+            font-size: 24px;
+            text-align: center;
+        }
+        .list {
+            padding-left: 40px;
+            padding-top: 30px;
+            li {
+                float: left;
+                width: 105px;
+                padding-top: 110px;
+                margin: 0 35px;
+                display: inline;
+                text-align: center;
+                &.item1 {
+                    background: url("../images/online_open_step_1.png") no-repeat top center;
+                }
+                &.item2 {
+                    background: url("../images/online_open_step_2.png") no-repeat top center;
+                }
+                &.item3 {
+                    background: url("../images/online_open_step_3.png") no-repeat top center;
+                }
+                &.item4 {
+                    background: url("../images/online_open_step_4.png") no-repeat top center;
+                }
+                &.item5 {
+                    background: url("../images/online_open_step_5.png") no-repeat top center;
+                }
+                &.item6 {
+                    background: url("../images/online_open_step_6.png") no-repeat top center;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * 下载中心
+ */
+.download-list{
 	li{
 		position: relative;
-		padding: 0px 30px 0 120px;
-		min-height: 100px;
-		line-height: 23px;
-		margin-bottom: 40px; 
-		.time{
-			width: 100px;
-			height: 100px;
+		padding: 0 30px 0 430px;
+		height: 260px;
+		margin-bottom: 20px;
+		.pic{
+			width:400px;
+			height: 260px;
+			overflow: hidden;
 			position: absolute;
 			left:0;
 			top:0;
-			text-align: center;
-			color: #fff;
-			font-size: 18px;
-			font-family: arial;
-			background: #d3ad46;
-			b{
-				font-size: 14px;
-				font-weight: normal;
-				margin-top: 24px;
-				display: block;
-			}
+			margin-right: 30px;
 		}
-		.country{
-			height: 35px;
-			line-height: 35px;
-			font-size: 16px;
-			border-bottom: 1px solid #e4e4e4;
-			b{
-				width: 22px;
-				height: 13px;
-				overflow:hidden;
+		.tit{
+				border-bottom: 1px dotted #cccccc;
+				color:#333;
+				font-size: 16px;
+				height: 83px;
+				line-height: 83px;
+				@extend %text-overflow;
+			}	
+		}
+		.intro{
+			padding: 15px 0;
+			line-height: 26px;
+			height: 66px;
+			overflow: hidden;
+		}
+		.btn-group{
+			padding-top: 20px;
+			a{
 				display: inline-block;
-				vertical-align: middle;
-				margin-left:5px;
-				border:1px solid #000000;
-				&.china{
-					background: url("../images/country/china.png") no-repeat left top;
-				}
-			}
-		}
-		.para{
-			line-height: 41px;
-			font-size: 16px;
-			color: #666666;
-			padding-top: 10px;
-			.name{
-				width: 270px;
-				float: left;
-				color: #333;
-				padding-right: 10px;
-			}
-			.prev{
-				width: 160px;
-				float: left;
-				padding-right: 10px;
-			}
-			.orecast{
-				width: 160px;
-				float: left;
-				padding-right: 10px;
-			}
-			.actual{
-				width: 20%;
-				float: left;
-			}
-			.btn-type{
-				width: 122px;
-				height: 41px;
-				float: right;
-				margin-right: 30px;
+				width: 135px;
+				height: 44px;
+				line-height: 44px;
 				text-align: center;
-				color: #fff;
-				&.red{
-					background: #f54545;
+				margin-right:20px;
+				span{
+					display: inline-block;
+					color:#fff;
+					font-size: 16px;
+					padding-left: 26px;
 				}
-				&.green{
-					background: #0f990f;
+			}
+			.btn-down{
+				background: #d3ad46;
+				span{
+					background: url("../images/downlist_down_icon.png") no-repeat left center;
+				}
+				&:hover{
+					background: #c3a03f;
+				}
+			}
+			.btn-qa{
+				background: #dfb79a;
+				span{
+					background: url("../images/downlist_qa_icon.png") no-repeat left center;
+				}
+				&:hover{
+					background: #c29f85;
+				}
+			}
+			.btn-jc{
+				background: #5e7eb3;
+				span{
+					background: url("../images/downlist_qa_set.png") no-repeat left center;
+				}
+				&:hover{
+					background: #405f91;
 				}
 			}
 		}
-	}
 }

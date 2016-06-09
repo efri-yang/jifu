@@ -260,5 +260,205 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   display: block;
 }
 
+/**
+ * 市场行情 公共样式
+ */
+.sshx-tabs-c-hd{
+	width: 120px;
+	float: left;
+	li{
+		border-bottom: 1px solid #e2b479;
+		position: relative;
+		&:last-child{
+			border-bottom: none;
+		}
+		&.active{
+			.arrow{
+				display: block;
+			}
+			a{
+				background: #b45d27;
+			}
+		}
+		
+		.arrow{
+			width: 6px;
+			height: 11px;
+			display:none;
+			overflow: hidden;
+			position: absolute;
+			right: -6px;
+			top:50%;
+			margin-top: -5.5px;
+			background: url("../images/arrow_right_cs.png") no-repeat top center;
+		}
+		a{
+			display: block;
+			height: 41px;
+			line-height: 41px;
+			@extend %text-overflow;
+			padding: 0 5px;
+			text-align: center;
+			background: #d69a64;
+			font-size: 16px;
+			color: #fff;
+			position: relative;	
+			&:hover{
+				background: #b45d27;
+			}
+		}
+		
+	}
+}
+.chart-map-wrapper{
+	width: 657px;
+	background:#fbf5ef; 
+	overflow: hidden;
+	float: left;
+	.chart-type{
+		text-align: right;
+		padding: 25px 60px 25px 0;
+		a{
+			display: inline-block;
+			color: #d69a64;
+			height: 28px;
+			line-height: 28px;
+			width: 62px;
+			padding: 1px;
+			text-align: center;
+			&:hover{
+				color: #b45d27;
+			}
+			&.current{
+				background: #f8eee4;
+				border:1px solid #f2decc;
+				border-radius: 5px;
+				padding: 0;
+				color: #b45d27;
+			}
+		}
+	}
+	.chart-map{
+		text-align: center;
+		margin: 0  auto;
+		width: 627px;
+		height: 335px;
+		overflow: hidden;
+	}
+}
+.chart-txt-wrapper{
+	background: #f8eee4;
+	width: 220px;
+	overflow: hidden;
+	float: right;
+	.item-up{
+		background: #f2decc;
+		padding-top: 10px;
+		.name{
+			width: 99px;
+			height: 139px;
+			line-height: 139px;
+			margin:0 auto;
+			padding: 0 20px;
+			overflow: hidden;
+			text-align: center;
+			color: #fff;
+			background: url("../images/circlex139.jpg") no-repeat;
+			p{
+				display: inline-block;
+				max-width: 100%;
+				vertical-align: middle;
+				line-height: normal;
+				span{
+					font-size: 22px;
+					width:100%;
+					display: block;
+					@extend %text-overflow;
+				}
+				b{
+					font-weight: normal;
+					font-size: 12px;
+				}
+			}
+		}
+		.num{
+			color: #f54545;
+			font-size: 24px;
+			text-align: center;
+		}
+		.wave{
+			text-align: center;
+			color: #f52f3e;
+			padding-bottom: 19px;
+			b{
+				    display: inline-block;
+				    vertical-align: middle;
+				    width: 11px;
+				    height: 13px;
+				    margin-top: -1px;
+				    margin-right: 3px;
+			}
+			&.up{
+				b{
+					background: url("../images/arrow_up_red.png") no-repeat top center;
+				}
+				
+			}
+			&.down{
+				b{
+					background: url("../images/arrow_down_red.png") no-repeat top center;
+				}
+				
+			}
+		}
+		.time{
+			height: 38px;
+			line-height: 38px;
+			color: #d69a64;
+			text-align: center;
+			border-top:1px dotted #e6c4ab;
+		}
+	}
+	.item-down{
+		background: #f8eee4;
+		position: relative;
+		li{
+			float: left;
+			width: 50%;
+			text-align: center;
+			box-sizing: border-box;
+			padding: 16px 2px;
+			border-right:1px dotted #ead1be;
+			border-top:1px dotted #ead1be;
+			&:nth-child(2n){
+				border-right: 0;
+			}
+			p{
+				font-size: 24px;
+				line-height: 23px;
+				color: #f54545;
+				font-family: arial;
+				@extend %text-overflow;
+			}
+			span{
+					color: #d69a64;
+					margin-top:2px;
+					display:inline-block;
+					&.up{
+						padding-right: 15px;
+						background: url("../images/arrow_up_cs.png") no-repeat right center;
+					}
+					&.down{
+						padding-right: 15px;
+						background: url("../images/arrow_down_cs.png") no-repeat right center;
+						
+					}
+			}
+		}
+	}
+}
+
+/********/
+
 
 
