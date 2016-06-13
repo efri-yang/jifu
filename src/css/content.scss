@@ -1259,11 +1259,12 @@
 /**
  * 投资产品——投资产品
  */
-.tzcp-tab-content{
-    background: #dfb79a;
+.tzpz-tab-content{
+   
     
 }
-.tzcp-name-list{
+.tzpz-name-list{
+    background: #dfb79a;
     li{
         float: left;
         width: 33.33%;
@@ -1295,6 +1296,37 @@
             height: 96px;
             overflow: hidden;
             margin-top: 15px;
+        }
+    }
+}
+.tzpz-name-detail{
+    .tit{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25px 0;
+    }
+    .tbl{
+        width: 100%;
+        border-top:1px solid #d75028;
+        border-left:1px solid #dadada;
+        border-right:1px solid #dadada;
+        border-bottom:1px solid #dadada;
+        thead{
+            background: #fff9ec;
+            th{
+                padding: 13px 0;
+                text-align: center;
+                border:1px solid #dadada;
+                border-top:none;
+            }
+        }
+        tbody{
+            td{
+                border:1px solid #dadada;
+                text-align: center;
+                 padding: 13px 0; 
+            }
         }
     }
 }
