@@ -1330,3 +1330,260 @@
         }
     }
 }
+
+/**
+ * 品种优势
+ */
+.pzys-detail-box{
+    .area-up{
+        .pic{
+            width: 558px;
+            height: 355px;
+            overflow: hidden;
+            float: left;
+        }
+        .intro{
+            float: right;
+            width: 558px;
+            height: 355px;
+            position: relative;
+            background: url("../images/pzys_detail_bg.jpg") no-repeat right top #ccb492;
+            .arrow{
+                position: absolute;
+                left:-9px;
+                top:30px;
+                width: 9px;
+                height: 17px;
+                background: url("../images/arrow_left.jpg") no-repeat  left top;
+            }
+            .txt{
+                padding: 30px 40px;
+                height: 280px;
+                overflow: hidden;
+                line-height: 24px;
+                color: #fff;
+            }
+            .line{
+                width: 74px;
+                height: 4px;
+                display: block;
+                background: #fff;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .pzys-advantage{
+        padding-top: 30px;
+        li{
+            width: 249px;
+            padding: 40px 10px 50px;
+            margin: 0 8px 10px;
+            display: inline;
+            float:left;
+            &.active{
+                background: #d3ad46;
+            }
+            .pic{
+                width: 81px;
+                height: 81px;
+                display: block;
+                margin: 0 auto 30px;
+                overflow: hidden;
+                &.pic1{
+                    background: url("../images/pzys_icon_1.jpg") no-repeat center center;
+                }
+                &.pic2{
+                    background: url("../images/pzys_icon_2.jpg") no-repeat center center;
+                }
+                &.pic3{
+                    background: url("../images/pzys_icon_3.jpg") no-repeat center center;
+                }
+                &.pic4{
+                    background: url("../images/pzys_icon_4.jpg") no-repeat center center;
+                }
+                &.pic5{
+                    background: url("../images/pzys_icon_5.jpg") no-repeat center center;
+                }
+                &.pic6{
+                    background: url("../images/pzys_icon_6.jpg") no-repeat center center;
+                }
+                &.pic7{
+                    background: url("../images/pzys_icon_7.jpg") no-repeat center center;
+                }
+                &.pic8{
+                    background: url("../images/pzys_icon_8.jpg") no-repeat center center;
+                }
+            }
+            .chn{
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+                color: #333333;
+                @extend %text-overflow;
+            }
+            .en{
+                text-align: center;
+                text-transform: uppercase;
+                color: #cccccc;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+/**
+ * 投资产品——安全保障
+ */
+.aqbz-tabs-hd-type{
+    text-align: center;
+    border-bottom: 1px solid #dfb79a;
+    margin-bottom: 30px;
+    li {
+        display: inline-block;
+        padding-bottom: 25px;
+        position: relative;
+        margin: 0 30px;
+        &.active {
+            .txt {
+                border-color: #f8a034 !important;
+                background: #f8a034  !important;
+                color: #fff !important;
+            }
+            .arrow {
+                display: block;
+            }
+        }
+        a {
+            display: block;
+            &:hover {
+                .txt1 {
+                    border-color: #f8a034;
+                    background: #f8a034;
+                    color: #fff;
+                }
+            }
+        }
+        .txt {
+            width: 70px;
+            height: 90px;
+            padding: 30px 25px 0;
+            overflow: hidden;
+            display: block;
+            border-radius: 100%;
+            border: 5px solid #e4e4e4;
+            font-size: 24px;
+            line-height: 28px;
+            &.txt1 {
+                border-color:#f8a034;
+                color:#f8a034;
+            }
+            &.txt2 {
+                border-color:#fe8642;
+                color:#fe8642;
+            }
+            &.txt3 {
+                border-color:#53c89b;
+                color:#53c89b;
+            }
+            &.txt4 {
+                border-color:#61a4c6;
+                color:#61a4c6;
+            }
+        }
+        .name {
+            font-size: 20px;
+            line-height: 20px;
+            color: #666;
+            margin-top: 8px;
+            display: block;
+        }
+        .arrow {
+            width: 15px;
+            height: 8px;
+            display: none;
+            position: absolute;
+            left: 50%;
+            margin-left: -4px;
+            top: 100%;
+            background: url("../images/online_open_arrow_red.png") no-repeat left top;
+        }
+    }
+}
+.apbz-tab-content{
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+    img {
+        max-width: 100%;
+    }
+}
+/**
+ * 投资产品——交割流程
+ */
+.jglc-tabs-hd-type{
+    li{
+        padding-bottom: 25px;
+    }
+}
+.jglc-tab-content{
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+    img {
+        max-width: 100%;
+    }
+}
+
+/**
+ *关于积富——合作机构 
+ */
+.hzjg-tabs-hd-type{
+    li{
+        float: left;
+        margin-right: 40px;
+        display: inline;
+        a{
+            display: block;
+            height: 52px;
+            line-height: 52px;
+            font-size: 16px;
+            padding: 0 20px 2px;
+        }
+        &.active{
+            a{
+                border-bottom: 2px solid #d3ad46;
+            }
+        }
+    }
+}
+.hzyh-tabs-content-list{
+    padding-top: 50px;
+    li{
+        float:left;
+        margin-bottom: 10px;
+        a{
+            width: 269px;
+            height: 186px;
+            overflow: hidden;
+        }
+    }
+}
+
+.hzdw-tabs-content-list,.hzmt-tabs-content-list{
+    padding-top: 40px;
+    li{
+        height: 186;
+        overflow: hidden;
+        margin-bottom: 10px;
+        .pic{
+            float: left;
+            margin-right: 32px;
+        }
+        .intro{
+            line-height: 24px;
+            padding-top: 25px;
+
+        }
+    }
+}
