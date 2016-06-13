@@ -99,7 +99,9 @@
     overflow: hidden;
     width: 1140px;
 }
-
+/**
+ * 单页容器
+*/
 .com-article-content {
     overflow: hidden;
     width: 100%;
@@ -110,6 +112,40 @@
     }
 }
 
+/**
+ * 公共部分——分页
+*/
+.pagination-type2 {
+    text-align: right;
+    a {
+        width: 108px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        margin: 0 5px;
+        background: #cccccc;
+        text-align: center;
+        font-size: 16px;
+        span {
+            color: #fff;
+        }
+        &:hover {
+            background: $activeColor;
+        }
+        &.prev {
+            span {
+                padding-left: 18px;
+                background: url("../images/p_arrow_lf.png") no-repeat left center;
+            }
+        }
+        &.next {
+            span {
+                padding-right: 18px;
+                background: url("../images/p_arrow_rt.png") no-repeat right center;
+            }
+        }
+    }
+}
 .pagination-type1 {
     text-align: right;
     a,
@@ -133,6 +169,70 @@
     }
 }
 
+/**
+ *公共tabs 头部
+ */
+.com-tabs-hd-type1{
+    text-align: center;
+    border-bottom: 1px solid #dfb79a;
+    margin-bottom: 30px;
+    li {
+        display: inline-block;
+        padding-bottom: 54px;
+        position: relative;
+        margin: 0 30px;
+        &.active {
+            .pic {
+                border-color: #dfb79a
+            }
+            .arrow {
+                display: block;
+            }
+        }
+        a {
+            display: block;
+            &:hover {
+                .pic {
+                    border-color: #dfb79a
+                }
+            }
+        }
+        .pic {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            display: block;
+            border-radius: 100%;
+            border: 8px solid #e4e4e4;
+            &.pic1 {
+                background: url("../images/khs_1.jpg") no-repeat center center;
+            }
+            &.pic2 {
+                background: url("../images/khs_2.jpg") no-repeat center center;
+            }
+            &.pic3 {
+                background: url("../images/khs_3.jpg") no-repeat center center;
+            }
+        }
+        .name {
+            font-size: 20px;
+            line-height: 20px;
+            color: #666;
+            margin-top: 8px;
+            display: block;
+        }
+        .arrow {
+            width: 15px;
+            height: 8px;
+            display: none;
+            position: absolute;
+            left: 50%;
+            margin-left: -4px;
+            top: 100%;
+            background: url("../images/online_open_arrow_red.png") no-repeat left top;
+        }
+    }
+}
 
 /**
  * 相关证照,软件使用
@@ -519,41 +619,7 @@
 }
 
 
-/**
- * 分页
- */
 
-.pagination-type2 {
-    text-align: right;
-    a {
-        width: 108px;
-        height: 36px;
-        line-height: 36px;
-        display: inline-block;
-        margin: 0 5px;
-        background: #cccccc;
-        text-align: center;
-        font-size: 16px;
-        span {
-            color: #fff;
-        }
-        &:hover {
-            background: $activeColor;
-        }
-        &.prev {
-            span {
-                padding-left: 18px;
-                background: url("../images/p_arrow_lf.png") no-repeat left center;
-            }
-        }
-        &.next {
-            span {
-                padding-right: 18px;
-                background: url("../images/p_arrow_rt.png") no-repeat right center;
-            }
-        }
-    }
-}
 
 
 /**
@@ -695,7 +761,6 @@
         }
     }
 }
-
 .countdown-time-blend2 {
     color: #fff;
     text-align: center;
@@ -715,7 +780,6 @@
         color: #333;
     }
 }
-
 .countdown-time-unit2 {
     text-align: center;
     margin-top: 3px;
@@ -727,7 +791,6 @@
         font-size: 18px;
     }
 }
-
 .cjcalendar-data-list {
     padding-left: 10px;
     padding-top: 30px;
@@ -1192,4 +1255,46 @@
 				}
 			}
 		}
+}
+/**
+ * 投资产品——投资产品
+ */
+.tzcp-tab-content{
+    background: #dfb79a;
+    
+}
+.tzcp-name-list{
+    li{
+        float: left;
+        width: 33.33%;
+        height: 393px;
+        box-sizing: border-box;
+        padding: 0 25px;
+        &:nth-child(2n){
+            background: #d6a582;
+        }
+        .pic{
+            width: 169px;
+            height: 169px;
+            overflow: hidden;
+            margin:30px auto 0;
+            display: block;
+        }
+        .name{
+            font-size: 16px;
+            color:#fff;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+
+        }
+        .intro{
+            font-size:14px;
+            line-height: 24px;
+            color: #fff;
+            height: 96px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+    }
 }
