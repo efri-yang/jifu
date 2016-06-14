@@ -80,7 +80,9 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 	-webkit-appearance: none;
 }
 
-
+.align-c{
+	text-align: center;
+}
 
 .container-box{
 	width: 1200px;
@@ -88,6 +90,62 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 }
 .com-lazyload-gif{
 	background: url("../images/loading.gif") no-repeat center center;
+}
+/**
+ * 公共部分——分页
+*/
+.pagination-type2 {
+    text-align: right;
+    a {
+        width: 108px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        margin: 0 5px;
+        background: #cccccc;
+        text-align: center;
+        font-size: 16px;
+        span {
+            color: #fff;
+        }
+        &:hover {
+            background: $activeColor;
+        }
+        &.prev {
+            span {
+                padding-left: 18px;
+                background: url("../images/p_arrow_lf.png") no-repeat left center;
+            }
+        }
+        &.next {
+            span {
+                padding-right: 18px;
+                background: url("../images/p_arrow_rt.png") no-repeat right center;
+            }
+        }
+    }
+}
+.pagination-type1 {
+    text-align: right;
+    a,
+    span {
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 20px;
+        text-align: center;
+        color: #ccc;
+        vertical-align: middle;
+    }
+    span.current {
+        background: #d3ad46;
+        color: #fff;
+    }
+    a:hover {
+        background: #d3ad46;
+        color: #fff;
+    }
 }
 /**
  * header 头部
