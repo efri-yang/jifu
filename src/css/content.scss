@@ -540,6 +540,7 @@
         padding: 15px 52px 15px 167px;
         border-bottom: 1px dotted #e4e4e4;
         line-height: 28px;
+        overflow: hidden;
         &:hover {
             .time {
                 color: $activeColor;
@@ -547,9 +548,11 @@
             }
         }
         a {
+            float: left;
             max-height: 56px;
             overflow: hidden;
             display: block;
+            width: 900px;
         }
         .time {
             position: absolute;
@@ -646,6 +649,7 @@
 .cjcalendar-box {
     background: #879fcf;
     padding: 10px;
+    overflow: hidden;
     .lt-area {
         padding: 3px;
         width: 530px;
@@ -1010,12 +1014,14 @@
 /**
  * 公共部分
  */
+
 .openaccount-tabs-hd {
     text-align: center;
     border-bottom: 1px solid #dfb79a;
     margin-bottom: 30px;
+
     li {
-        display: inline-block;
+       display: inline-block;
         padding-bottom: 54px;
         position: relative;
         margin: 0 30px;
@@ -1216,7 +1222,7 @@
         height: 393px;
         box-sizing: border-box;
         padding: 0 25px;
-        &:nth-child(2n){
+        &.two{
             background: #d6a582;
         }
         .pic{
@@ -1382,6 +1388,7 @@
     text-align: center;
     border-bottom: 1px solid #dfb79a;
     margin-bottom: 30px;
+    font-size: 0;
     li {
         display: inline-block;
         padding-bottom: 25px;
@@ -1822,13 +1829,13 @@
 }
 .zyfw-yjtd-hyjl{
     position: relative;
-    margin-left: -20px;
+    margin-left: -21px;
     padding-top: 25px;
     padding-bottom: 45px;
     li {
         float: left;
         width: 269px;
-        margin-left: 20px;
+        margin-left: 21px;
         margin-bottom: 20px;
         display: inline;
         a {
@@ -1976,6 +1983,45 @@
             color: #aaa;
             font-weight: bold;
             margin-top: -12px;
+        }
+    }
+}
+
+/**
+ * 
+ */
+.zyfw-yjtd-gallery{
+    overflow: hidden;
+}
+.yjtd-gallery-up{
+    .scroller-box{
+        ul{
+            width: 999999px;
+            li{
+                float: left;
+                a{
+                    width: 227px;
+                    height: 284px;
+                    position: relative;
+                    display: block;
+                    .mask{
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        width: 100%;
+                        height: 100%;
+                        background: url("../images/black_bg.png") repeat;
+                    }
+                }
+                &.active{
+                    a{
+                        .mask{
+                            display: none;
+                        }
+                    }
+                }
+               
+            }
         }
     }
 }
