@@ -26,8 +26,8 @@
         $("#J_news-list").children("li").each(function(){
             var $this=$(this);
             $this.bind("mouseover",function(){
-                $this.find(".bd").stop(true,true).slideDown().end()
-                    .siblings().find(".bd").stop(true,true).slideUp();
+                $this.find(".bd").hide().end()
+                    .siblings().find(".bd").show();
             })
         });
     });

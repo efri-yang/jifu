@@ -1991,12 +1991,23 @@
  * 
  */
 .zyfw-yjtd-gallery{
+    margin-top: 28px;
+    margin-bottom: 50px;
     overflow: hidden;
 }
 .yjtd-gallery-up{
+    position: relative;
     .scroller-box{
+        width: 1135px;
+        overflow: hidden;
+        position:relative;
+        height: 284px;
         ul{
             width: 999999px;
+            position: absolute;
+            left:0;
+            top:0;
+                
             li{
                 float: left;
                 a{
@@ -2012,8 +2023,14 @@
                         height: 100%;
                         background: url("../images/black_bg.png") repeat;
                     }
+                    &:hover{
+                        .mask{
+                            display: none;
+                        }
+                    }
+
                 }
-                &.active{
+                &.active,&:hover{
                     a{
                         .mask{
                             display: none;
@@ -2022,6 +2039,69 @@
                 }
                
             }
+        }
+    }
+    .dir{
+        position: absolute;
+        top:50%;
+        margin-top: -22px;
+        width: 44px;
+        height: 44px;
+        overflow: hidden;
+        z-index: 10;
+        background: url("../images/yjtd_arrow.png") no-repeat left top;
+        &.prev{
+            background-position: 0 0;
+            left:10px;
+            &:hover{
+                background-position:0 -88px;
+            }
+        }
+        &.next{
+            right:15px;
+            background-position: 0 -44px;
+            &:hover{
+                background-position:0 -132px;
+            }
+        }
+    }
+}
+.yjtd-gallery-down{
+    position: relative;
+    width: 1135px;
+    height: 312px;
+    overflow: hidden;
+    background: url("../images/yjtd_gallery_down_bg.png") no-repeat left top;
+    .inner{
+        width: 680px;
+        height: 250px;
+        overflow: hidden;
+        position: absolute;
+        left:50%;
+        margin-left: -340px;
+        border-left:1px solid #d3ad46;
+        border-right:1px solid #d3ad46;
+        border-bottom:1px solid #d3ad46;
+    }
+    .gallery-down-item{
+        color: #fff;
+        padding-top: 15px;
+        .name{
+            font-size: 24px;
+            text-align: center;
+        }
+        .job{
+            border-bottom: 2px solid #ffffff;
+            display: inline-block;
+            padding: 3px 0;
+            font-size: 18px;
+            margin:0 auto;
+        }
+        .intro{
+            color: #aaaaaa;
+            padding:30px 30px 0;
+            line-height: 24px;
+            height: 120px;
         }
     }
 }

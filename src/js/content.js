@@ -3,16 +3,7 @@
  */
 
 $(function(){
-	$("#J_staff-bigPic").staffGallery({
-	    fixLen:5,//固定在第几张
-		isTitShow:true,
-		isBigBtnShow:true,
-		bigPicWrapW:930,//大图的宽度
-		bigPicWrapH:500,//大图高度	
-		viewLen:6,//滚动可见的长度
-		scroW:144,//li的宽度+边框+margin
-		dir:"left"//滚动方向向左									
-	});
+	
 
 	/**实时行情 左右滚动效果**/
 	(function(){
@@ -46,6 +37,45 @@ $(function(){
 			
 			scrolling(1);
 
+		})
+	})();
+
+	/**研究团队效果**/
+	(function(){
+		var $pre=$("#J_yjtd-gallery-prev");
+		var $next=$("#J_yjtd-gallery-next");
+		var $ul=$("#J_yjtd-gallery-list");
+		var $lis=$ul.children("li");
+		var lens=$lis.length;
+		var currIndex=0;
+		var viewLen=5;
+		var singleW=$lis.eq(0).outerWidth();
+		if(lens <=5){
+			$pre.hide();
+			$next.hide();
+			return;
+		}
+		$ul.width(lens*singleW);
+		function scrolling(dir){
+			var str=(dir>0) ? "-=" : "+=";
+			$ul.stop(false, true).animate({left: str+singleW},300);
+		}
+		$pre.on("click",function(event){
+			event.preventDefault();
+			if($ul.is(":animated")) return;
+			if(currIndex <=0) return;
+			if(currIndex<=(lens-viewLen)){
+				currIndex--;
+				scrolling(-1)
+			}
+		});
+		$next.on("click",function(event){
+			event.preventDefault();
+			if($ul.is(":animated")) return;
+			if(currIndex<=(lens-viewLen-1)){
+				currIndex++;
+				scrolling(1)
+			}
 		})
 	})()		
 });
