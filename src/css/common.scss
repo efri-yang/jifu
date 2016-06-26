@@ -151,10 +151,11 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
  * header 头部
  */
 .header{
-	height: 76px;
+	height: 85px;
 	.logo{
-		width:270px;
-		height: 100%;
+		width:138px;
+		height: 48px;
+		margin-top:20px;
 		background: #f60;
 		float: left; 
 		text-indent: -999999px;
