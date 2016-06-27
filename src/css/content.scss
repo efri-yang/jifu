@@ -1648,6 +1648,11 @@
     }
     &.item-wx{
         left: 40px;
+        .detail{
+            float: left;
+            max-width: 175px;
+            overflow: hidden;
+        }
        .bg{
             background: #98c01b
         }
@@ -1701,6 +1706,7 @@
             padding-top: 20px;
             font-size: 16px;
             line-height: 32px;
+            text-align: left;
         }
         .qrcode{
             position: absolute;
