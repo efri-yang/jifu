@@ -340,6 +340,54 @@ body{
     }
 }
 
+.aboutjf-contactus{
+    table{
+        width: 100%;
+        background: #fafafa;
+        thead{
+            th{
+                height: 60px;
+                font-size: 18px;
+                font-weight: normal;
+                background: #d3ad46;
+                color: #fff;
+                padding-left:20px;
+                text-align: left;
+            }  
+        }
+        td{
+            height: 58px;
+            line-height: 58px;
+            background: #fff;
+            color: #666;
+            padding-left:20px;
+        }
+        .detail{
+            td{
+                background: none;
+                line-height: normal;
+                padding-bottom: 20px;       
+            }
+        }
+        .job-tit{
+            font-size: 14px;
+            color: #666666;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .job-detail{
+            line-height: 24px;
+        }
+        .title{
+            background: url("../images/job_circle.png")  no-repeat right center;
+            padding-right: 25px;
+            &.current{
+                background: url("../images/job_circle_active.png")  no-repeat right center;
+            }
+        }
+    }
+}
 
 /**办公环境相册*/
 
