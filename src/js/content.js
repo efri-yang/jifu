@@ -77,5 +77,24 @@ $(function(){
 				scrolling(1)
 			}
 		})
+	})();
+	(function(){
+		$(function(){
+			var $tbl=$("#J_aboutjf-contactus-tbl");
+			var $tbody=$tbl.find("tbody");
+			var $tr=$tbody.find("tr").not(".detail");
+			var $detail=$tbody.find("tr.detail");
+			$tr.on("click",function(){
+				var $this=$(this);
+				var index=$tr.index(this);
+				if($this.hasClass("current")){
+					$this.removeClass("current");
+					$detail.eq(index).hide();
+				}else{
+					$this.addClass("current");
+					$detail.eq(index).show();
+				}
+			})
+		})
 	})()		
 });

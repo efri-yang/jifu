@@ -344,6 +344,7 @@ body{
     table{
         width: 100%;
         background: #fafafa;
+        table-layout: fixed;
         thead{
             th{
                 height: 60px;
@@ -361,12 +362,16 @@ body{
             background: #fff;
             color: #666;
             padding-left:20px;
+            border-bottom: 1px solid #e4e4e4;
+            font-size: 14px;
         }
         .detail{
+            display: none;
             td{
                 background: none;
                 line-height: normal;
-                padding-bottom: 20px;       
+                padding-bottom: 20px;
+
             }
         }
         .job-tit{
@@ -382,8 +387,18 @@ body{
         .title{
             background: url("../images/job_circle.png")  no-repeat right center;
             padding-right: 25px;
-            &.current{
-                background: url("../images/job_circle_active.png")  no-repeat right center;
+            font-size: 18px;
+        }
+        tbody{
+            tr{
+                &.current{
+                    .title{
+                        background: url("../images/job_circle_active.png")  no-repeat right center; 
+                    }
+                    td{
+                        border-bottom: none;       
+                    }
+                }
             }
         }
     }
