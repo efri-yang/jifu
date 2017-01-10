@@ -1,33 +1,31 @@
 {
-  "name": "gulptest",
-  "version": "1.0.0",
-  "description": "用来测试gulp的用法",
+  "name": "gulp4",
+  "version": "1.2.0",
+  "description": "use gulp4",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sTeam",
+    "gulp",
+    "gulp4"
+  ],
+  "author": "sTeam-ww",
+  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.11.2",
-    "del": "^2.2.0",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-cached": "^1.1.0",
     "gulp-clean-css": "^2.0.10",
-    "gulp-concat": "^2.6.0",
-    "gulp-copy": "0.0.2",
     "gulp-file-include": "^0.13.7",
-    "gulp-filter": "^4.0.0",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-jshint": "^2.0.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.0.6",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.3",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5",
-    "imagemin-pngquant": "^4.2.2",
-    "map-stream": "0.0.6",
-    "run-sequence": "^1.1.5",
-    "vinyl-fs": "^2.4.3",
-    "wrench": "^1.5.9"
+    "gulp-useref": "^3.1.0",
+    "imagemin-jpegoptim": "^5.0.0",
+    "imagemin-pngquant": "^5.0.0"
   }
 }

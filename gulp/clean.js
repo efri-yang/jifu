@@ -1,19 +1,21 @@
+'use strict';
 
 var gulp = require('gulp');
 var del = require('del');
-var conf=require('./conf');
 
-/**
- * [清除.tmp下的所有文件]
- */
-gulp.task('clean', function () {
-    return del(conf.paths.tmp+"/**/*");
-});
+var conf = require('./config.js');
+var c_paths = conf.paths;
+var c_folders = conf.folders;
 
+function clean(){
+	return del(c_paths.tmp)
+}
 
-/**
- * [清除.tmp下的所有文件]
- */
-gulp.task('clean-dist', function () {
-    return del(conf.paths.dist+"/**/*");
-});
+function cleanBuild(){
+	return del(c_paths.dist)
+}
+
+module.exports = {
+	clean: clean,
+	cleanBuild: cleanBuild
+}

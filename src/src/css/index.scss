@@ -1,0 +1,937 @@
+@charset "utf-8";
+@import "variable";
+// banner
+.banner-box {
+    height: 500px;
+    background: #000;
+    .banner-list {
+        li {
+            height: 500px;
+            width: 100%;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .banner-numlist {
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        z-index: 30;
+    }
+    .banner-numlist li {
+        width: 168px;
+        height: 70px;
+        line-height: 70px;
+        background: #fff;
+        border: 2px solid #d4bf85;
+        margin: 0 3px;
+        top: 0;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        -webkit-transition: all .3s;
+        -ms-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+    .banner-numlist li {
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+    }
+    .banner-numlist li.oncurr {
+        border-color: #f9c432;
+        top: -3px;
+    }
+}
+
+//企业指数
+.home-enterprise-index {
+    position: relative;
+    padding: 10px 0;
+    .dir-btn {
+        width: 32px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -16px;
+        overflow: hidden;
+        background: url("../images/enterpriseindex_arrow.png") no-repeat 0 0;
+        &.prev {
+            left: -32px;
+            background-position: 0 0;
+            &:hover {
+                background-position: 0 -32px;
+            }
+            &.disabled {
+                background-position: 0 -64px;
+            }
+        }
+        &.next {
+            right: -32px;
+            background-position: 0 -96px;
+            &:hover {
+                background-position: 0 -128px;
+            }
+            &.disabled {
+                background-position: 0 -160px;
+            }
+        }
+    }
+    .list-scroller {
+        width: 100%;
+        overflow: hidden;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        box-sizing: border-box;
+        position: relative;
+        height: 103px;
+    }
+    .list {
+        width: 99999px;
+		position: absolute;
+		left:0;
+		top:0;
+        li {
+            text-align: center;
+            float: left;
+            display: inline;
+            width: 171px;
+            min-height: 80px;
+            border-right: 1px solid #ccc;
+            &:last-child{
+            	border-right: 0;
+            	padding-right: 1px;
+            }
+            a {
+                display: block;
+                padding: 10px 5px;
+                &:hover {
+                    background: #fff5db;
+                }
+            }
+            .name {
+                font-size: 18px;
+                color: #333;
+                @extend %text-overflow;
+            }
+            .num {
+                color: #f54545;
+                font-size: 30px;
+                line-height: 35px;
+                font-family: arial;
+                font-weight: bold;
+                &.up {
+                    color: #f54545;
+                }
+                &.down {
+                    color: #0f990f
+                }
+            }
+            .wave {
+                font-size: 14px;
+                font-family: arial;
+                &.up {
+                    color: #f52f3e;
+                    b {
+                        background: url("../images/arrow_up_red.png") no-repeat top center;
+                    }
+                }
+                &.down {
+                    color: #0f990f;
+                    b {
+                        background: url("../images/arrow_down_green.png") no-repeat top center;
+                    }
+                }
+                b {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 11px;
+                    height: 13px;
+                    margin-top: -3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}
+
+.title-type1 {
+    text-align: center;
+    .name-chn {
+        font-size: 30px;
+        line-height: 35px;
+        color: $hoverColor;
+    }
+    .name-en {
+        position: relative;
+        display: inline-block;
+        padding: 0 13px;
+        color: #aaaaaa;
+        b {
+            height: 1px;
+            background: #aaa;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -0.5px;
+        }
+        span {
+            padding: 0 5px;
+            background: #fff;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+/****关于积富************************/
+.home-aboutjf{
+	margin-top: 55px;
+}
+
+.about-box {
+	margin-top: 10px;
+    .intro {
+        background: url("../images/home_aboutjf_bg.jpg") no-repeat right top #cbb591;
+        width: 660px;
+        height: 195px;
+        overflow: hidden;
+        float: left;
+        color: #fff;
+        padding: 25px 40px 80px 40px;
+        position: relative;
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            line-height: 45px;
+            border-bottom: 4px solid #fff;
+        }
+        .detail {
+            padding: 30px 0 0;
+            font-size: 14px;
+            line-height: 24px;
+            max-height: 96px;
+            overflow: hidden;
+        }
+        .gosee-btn {
+            width: 132px;
+            height: 38px;
+            line-height: 38px;
+            color: #fff;
+            position: absolute;
+            right: 40px;
+            bottom: 30px;
+            text-align: center;
+            background: url("../images/white_bg.png") repeat left center;
+            -webkit-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            b {
+                background: url("../images/white_arrow_right.png") no-repeat right center;
+                padding-right: 25px;
+            }
+            &:hover {
+                right: 30px;
+            }
+        }
+    }
+    .pic {
+        width: 460px;
+        height: 300px;
+        overflow: hidden;
+        float: right;
+    }
+}
+.news-box{
+	.middle-pic{
+		float: left;
+		width: 304px;
+		height: 300px;
+		overflow: hidden;
+	}
+}
+//新闻列表 
+.news-list-wrapper{
+	float: left;
+	padding-left: 40px;
+	padding-right: 21px;
+	width: 375px;
+	overflow: hidden;
+	padding-top: 15px;
+	.more-btn{
+		margin-top:7px;
+		float: right;
+		color: $activeColor;
+		background: url("../images/more_btn.png") no-repeat right center;
+		padding-right: 20px;
+	}
+}
+.news-list{
+	li{
+		border-bottom: 1px dotted #aaaaaa;
+		&.current{
+			.bd{
+				display: block;
+			}
+		}
+		.hd{
+			position: relative;
+			padding-right: 88px;
+			height: 48px;
+			line-height: 48px;
+			a{
+				@extend %text-overflow;
+				max-width: 100%;
+				display:inline-block;
+				font-size: 16px;
+			}
+			.time{
+				position: absolute;
+				right: 0;
+				top:2px;
+				color: #aaaaaa;
+				font-family: arial;
+				font-size: 12px;
+			}
+		}
+		.bd{
+			height: 44px;
+			line-height: 22px;
+			overflow: hidden;
+			font-size: 12px;
+			padding: 0 0 10px;
+			display: none;
+		}
+	}
+}
+//公告 
+.report-list-box{
+	float:right;
+	padding-left:40px;
+	padding-top: 15px;
+	padding-right: 40px;
+	width:380px;
+	overflow: hidden;
+	.hd{
+		height: 46px;
+		line-height: 46px;
+		display: inline-block;
+		color: #000;
+		font-size: 18px;
+		border-bottom: 4px solid #d3ad46;
+	}
+	.list{
+		padding: 15px 0 0;
+		li{
+			height:36px;
+			line-height: 36px;
+			overflow: hidden;
+			font-size: 16px;
+			background: url("../images/circle_bg.png") no-repeat 3px center;
+			padding-left: 18px;
+			@extend %text-overflow;
+		}
+	}
+	.more-btn{
+		margin-top:7px;
+		float: right;
+		color: $activeColor;
+		background: url("../images/more_btn.png") no-repeat right center;
+		padding-right: 20px;
+	}
+}
+
+/****专业服务************************/
+.home-zyfw-box{
+	margin-top: 45px;
+}
+.zyfw-list{
+	margin-top: 70px;
+	ul{
+		position: relative;
+		margin-left: -20px;
+	}
+	li{
+		float: left;
+		width: 224px;
+		margin-left: 20px;
+		display: inline;
+		overflow: hidden;
+		a{
+			color:#666;
+			display: block;
+			&:hover{
+				.tit{
+					color:$hoverColor;
+					&:after{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.detail{
+			line-height: 28px;
+			padding-top: 13px;
+			
+		}
+		.pic{
+			width: 224px;
+			height: 138px;
+			overflow: hidden;
+		}
+		.txt{
+			padding:0 20px;
+		}
+		.tit{
+			font-size: 18px;
+			height: 40px;
+			line-height: 40px;
+			max-width: 100%;
+			@extend %text-overflow;
+			display: inline-block;
+			position: relative;
+			margin-top: 5px;
+			&:after{
+				content: "";
+				-webkit-transition: all .3s ease-out;
+			-ms-transition: all .3s ease-out ;
+			-moz-transition: all .3s ease-out ;
+		    transition: all .3s ease-out ;
+			    width: 36px;
+			    height: 2px;
+			    background: #d3ad46;
+			    position: absolute;
+			    bottom:0px;
+			    left: 0;
+			}
+		}
+	}
+}
+
+/****行情中心************************/
+.home-hxzx-box{
+	margin-top: 110px;
+}
+/****研究团队************************/
+.yjtd-box{
+	margin-top: 60px;
+	.yjtd-bd{
+		margin-top: 70px;
+	}
+}
+
+.yj-team{
+	width: 560px;
+	float: left;
+	padding-top:15px;
+	.hd{
+		font-size: 16px;
+		color: #333;
+		padding-left: 20px;
+		.more-btn{
+			margin-top:7px;
+			float: right;
+			color: $activeColor;
+			background: url("../images/more_btn.png") no-repeat right center;
+			padding-right: 20px;
+			font-size: 12px;
+		}
+	}
+	.list{
+		li{
+			float: left;
+			margin:12px 0px 12px 20px;
+			
+			a{
+				display: block;
+				position: relative;
+				width: 260px;
+				height: 178px;
+				overflow: hidden;
+				&:hover{
+					.infor{
+						bottom: 0;
+					}
+				}
+			}
+			.pic{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.infor{
+				position: absolute;
+				left:0;
+				bottom:-50px;
+				width:100%;
+				height: 48px;
+				background-color:rgba(0,0,0,0.8);
+				text-align: center;
+				color: #fff;
+				padding-top: 2px;
+				font-size: 16px;
+				-webkit-transition: all .2s ease-out;
+				-ms-transition: all .2s ease-out ;
+				-moz-transition: all .2s ease-out ;
+			    transition: all .2s ease-out ;
+				p{
+					line-height: 22px;
+					height: 22px;
+					@extend %text-overflow;
+				} 
+			}
+		}
+	}
+}
+.yj-news{
+	width: 600px;
+	float: right;
+	.jy-school-intro{
+		height:223px;
+		padding: 25px 40px 75px;
+		background: #d3ad46;
+		position:relative;
+		.hd{
+			    height: 55px;
+			    line-height: 55px;
+			    display: inline-block;
+			    color: #fff;
+			    font-size: 18px;
+			   	position: relative;
+			   
+			    &:after{
+					content:"";
+					position: absolute;
+					left:0;
+					bottom: 0;
+					width: 75px;
+					border-bottom: 4px solid #fff;
+			    }
+		}
+		.bd{
+			color: #ffffff;
+			padding: 25px 0;
+			max-height: 176px;
+			overflow: hidden;
+		}
+		.gosee-btn {
+            width: 132px;
+            height: 38px;
+            line-height: 38px;
+            color: #fff;
+            position: absolute;
+            left: 40px;
+            bottom: 30px;
+            text-align: center;
+            background: url("../images/white_bg.png") repeat left center;
+            -webkit-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            b {
+                background: url("../images/white_arrow_right.png") no-repeat right center;
+                padding-right: 25px;
+            }
+            &:hover {
+                left: 50px;
+            }
+        }
+	}
+	.list{
+		padding-left: 40px;
+		padding-top: 10px;
+		li{
+			overflow: hidden;
+			position: relative;
+			padding-right: 135px;
+			padding-left: 10px;
+			background: url("../images/circle_bg.png") no-repeat left center;
+			a{
+				display: block;
+				height: 36px;
+				line-height: 36px;
+				font-size: 16px;
+				@extend %text-overflow;
+			}
+			.time{
+				position: absolute;
+				right: 0;
+				top:50%;
+				margin-top: -12px;
+				height: 24px;
+				line-height: 24px;
+				width: 80px;
+				background: #cccccc;
+				border-radius: 5px;
+				font-size: 12px;
+				text-align: center;
+				color: #fff;
+				font-family: arial;
+			}
+		}
+	}
+}
+/****投资学院************************/
+.tzxy-box{
+	margin-top: 125px;
+	padding-bottom: 70px;
+	.list{
+		margin-top: 50px;
+		li{
+			float: left;
+			width: 25%;
+			a{
+				display:inline-block;
+				line-height: 81px;
+				margin-left: 40px;
+				b{
+					font-size: 18px;
+					font-weight: normal;
+				}
+			}
+			
+			.pic{
+				width: 81px;
+				height: 81px;
+				display: block;
+				float: left;
+				margin-right: 25px;
+				overflow: hidden;
+			}
+			&.item-jszs{
+				.pic{
+					background: url("../images/tzxy_1.jpg") no-repeat left top;
+				}
+			}
+			&.item-jszd{
+				.pic{
+					background: url("../images/tzxy_2.jpg") no-repeat left top;
+				}
+			}
+			&.item-cjwt{
+				.pic{
+					background: url("../images/tzxy_3.jpg") no-repeat left top;
+				}
+			}
+			&.item-rjsy{
+				.pic{
+					background: url("../images/tzxy_4.jpg") no-repeat left top;
+				}
+			}
+		}
+	}
+}
+
+/****投资学院************************/
+.hxzx-bd{
+	margin-top: 15px;
+}
+.hxzx-tabs-p-hd{
+	text-align: center;
+	font-size: 0;
+	position: relative;
+	z-index: 1;
+	li{
+		display: inline-block;
+		border:1px solid #e4e4e4;
+		padding-top: 1px;
+		a{
+			display: block;
+			text-align: center;
+			height: 42px;
+			line-height: 42px;
+			width: 138px;
+			font-size: 16px;
+		}
+		&.active,&:hover{
+			border-top:2px solid #d3ad46;
+			padding-top: 0;
+		}
+		&.active{
+			border-bottom-color: #fff;
+		}
+		
+	}
+}
+.hxzx-tabs-p-bd{
+	border:1px solid #e4e4e4;
+	position: relative;
+	margin-top: -1px;
+	padding: 1px 1px 1px 199px;
+	height: 419px;
+	overflow: hidden;
+}
+//实时行情
+
+.sshx-countdown-box{
+	width: 179px;
+	padding: 0px 10px 0;
+	background: #879fcf;
+	height: 419px;
+	position: absolute;
+	left:0;
+	top:1px;
+	overflow: hidden;
+	.item-hd{
+		font-size: 16px;
+		color: #fff;
+		padding: 7px 0 10px 10px;
+	}
+	.countdown-box{
+		padding-bottom: 13px;
+		position: relative;
+		.arrow{
+			width: 25px;
+			height: 13px;
+			overflow: hidden;
+			position: absolute;
+			left:50%;
+			margin-left: -12.5px;
+			bottom: 0;
+			background: url("../images/arrow_down_blue.png") no-repeat left top;
+		}
+		.detail-txt{
+			background: #4763a8;
+			height: 110px;
+			.hd{
+				font-size: 12px;
+				color: #fff;
+				text-align: center;
+				line-height: 23px;
+				height: 23px;
+				@extend %text-overflow;
+				padding: 10px 10px 0;
+			}
+		}
+	}
+	.list{
+		li{
+			height: 56px;
+			line-height: 56px;
+			background: #94aad5;
+			margin-bottom: 7px;
+			text-align: center;
+			font-size: 16px;
+			color: #fff;
+			padding: 0 10px;
+			@extend %text-overflow;
+			&.time{
+				line-height: normal;
+				padding-top: 5px;
+				line-height: 23px;
+				height: 51px;
+			}
+		}
+	}		
+}
+.countdown-time-blend{
+	color: #fff;
+	text-align: center;
+	margin-top: 8px;
+	span{
+		display:inline-block;
+		vertical-align: middle;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		background: #fff;
+		text-align: center;
+		font-size: 16px;
+		border-radius: 100%;
+		overflow: hidden;
+		margin: 0 3px;
+		color: #333;	
+	}
+}
+.countdown-time-unit{
+	text-align: center;
+	margin-top: 3px;
+	span{
+		display:inline-block;
+		width: 40px;
+		height: 32px;
+		color: #fff;
+		font-size: 12px;
+	}
+}
+
+
+/**
+ * 图表
+ */
+.highcharts-container{
+	width: 100%;
+	height:100%;
+}
+
+/**
+ *市场资讯 
+ */
+.home-marketnews-list {
+	padding-left: 20px;
+	padding-right: 20px;
+    li {
+        position: relative;
+        padding: 0px 20px 0px 167px;
+        border-bottom: 1px dotted #e4e4e4;
+        line-height: 28px;
+        &:hover {
+        	background: #fbf7ec;
+            .time {
+                color: $activeColor;
+                background: url("../images/time_clock_hover.jpg") no-repeat left center;
+            }
+        }
+        a {
+            height: 55px;
+            line-height: 55px;
+            overflow: hidden;
+            display: block;
+            @extend %text-overflow;
+        }
+        .time {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            padding-left: 30px;
+            color: #aaaaaa;
+            font-size: 18px;
+            background: url("../images/time_clock.jpg") no-repeat left center;
+        }
+    }
+}
+.home-hxzx-pagination{
+	padding-top: 23px;
+	.pagination-type2{
+		text-align: center;
+	}
+}
+/**
+ *财经 日历 
+ */
+.home-cjcalendar-data-list {
+    padding-left: 20px;
+    padding-top: 15px;
+    li {
+        position: relative;
+        padding: 0px 30px 0 90px;
+        min-height: 70px;
+        line-height: 23px;
+        margin-bottom: 15px;
+        .time {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-family: arial;
+            background: #d3ad46;
+            b {
+                font-size: 14px;
+                font-weight: normal;
+                margin-top: 15px;
+                display: block;
+            }
+        }
+        .country {
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            border-bottom: 1px solid #e4e4e4;
+            b {
+                width: 22px;
+                height: 13px;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+                border: 1px solid #000000;
+                &.china {
+                    background: url("../images/country/china.png") no-repeat left top;
+                }
+            }
+        }
+        .para {
+            line-height: 18px;
+            font-size: 16px;
+            color: #666666;
+            padding-top: 10px;
+            .name {
+                width: 220px;
+                float: left;
+                color: #333;
+                padding-right: 10px;
+            }
+            .prev {
+                width: 150px;
+                float: left;
+                padding-right: 10px;
+            }
+            .orecast {
+                width: 150px;
+                float: left;
+                padding-right: 10px;
+            }
+            .actual {
+                width: 150px;
+                float: left;
+            }
+            .btn-type {
+                width: 100px;
+                height: 27px;
+                line-height: 27px;
+                overflow:hidden;
+                float: right;
+                margin-right: 30px;
+                text-align: center;
+                color: #fff;
+                &.red {
+                    background: #f54545;
+                }
+                &.green {
+                    background: #0f990f;
+                }
+            }
+        }
+    }
+}
+
+/**
+ *积富内参
+ */
+.home-jfnc-list{
+	padding: 10px 40px 15px;
+	li{
+		border-bottom: 1px solid #e4e4e4;
+			
+			a{
+				display: block;
+				font-size: 16px;
+				height: 50px;
+				line-height: 50px;
+				@extend %text-overflow;
+
+
+			}
+		
+	}
+}
